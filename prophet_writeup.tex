@@ -1,0 +1,517 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={Prophet Customer Forecast},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{{#1}}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{{#1}}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{{#1}}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{{#1}}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{{#1}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{{#1}}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{{#1}}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{{#1}}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{{#1}}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{{#1}}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{{#1}}}
+\newcommand{\ImportTok}[1]{{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{{#1}}}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{{#1}}}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{{#1}}}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{{#1}}}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{{#1}}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{{#1}}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{{#1}}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{{#1}}}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{{#1}}}}
+\newcommand{\BuiltInTok}[1]{{#1}}
+\newcommand{\ExtensionTok}[1]{{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{{#1}}}
+\newcommand{\RegionMarkerTok}[1]{{#1}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{{#1}}}}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{{#1}}}}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{{#1}}}}
+\newcommand{\NormalTok}[1]{{#1}}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\providecommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{Prophet Customer Forecast}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+    \author{}
+    \preauthor{}\postauthor{}
+    \date{}
+    \predate{}\postdate{}
+  
+
+\begin{document}
+\maketitle
+
+\subsection{Introduction}\label{introduction}
+
+This notebook will outline the steps to produce the prophet forecast,
+incorporating historical as well as future data for catalog circulation,
+marketing investment, and the J.Jill promotional calendar. The first
+step will be loading the required libraries to handle our data in R.
+
+\subsection{Loading the Data}\label{loading-the-data}
+
+There are 4 required files used to build this forecast. They are:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Historical customer counts, monthly
+\item
+  Historical and future investment numbers, monthly
+\item
+  Historical and future catalog circulation, monthly
+\item
+  Historical and future promotional calendar
+\end{enumerate}
+
+First we will investigate the customer data set.
+
+\subsubsection{Customer Data}\label{customer-data}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# sourced from alteryx workflow: Create Customer Data Set on latest masterXXk.yxdb file}
+
+\NormalTok{proph =}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{'processed_customers.csv'}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Investment Data}\label{investment-data}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# sourced from Maria David, manually processed (no alteryx workflow)}
+
+\NormalTok{inv =}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{'processed_investments.csv'}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Catalog Circulation Data}\label{catalog-circulation-data}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# sourced from alteryx workflow: Prep Catalog History 20180613 on Jim's latest circulation calendar}
+\NormalTok{circ =}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{'processed_circ.csv'}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Promotional Calenendar
+Data}\label{promotional-calenendar-data}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# sourced from alteryx workflow: Prop Promo File 20180717 on Kaitlyn's latest promo calendar}
+\NormalTok{promos =}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{'processed_promos.csv'}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+Now that we have all of the data prepped and ready for modeling, we can
+merge it into one larger file.
+
+\subsubsection{Merge training data}\label{merge-training-data}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{regress =}\StringTok{ }\KeywordTok{merge}\NormalTok{(proph, inv, }\DataTypeTok{by=}\KeywordTok{c}\NormalTok{(}\StringTok{'FISCAL_YR'}\NormalTok{, }\StringTok{'FISCAL_MO'}\NormalTok{, }\StringTok{'Segment_Channel'}\NormalTok{), }\DataTypeTok{all.y=}\OtherTok{TRUE}\NormalTok{)}
+\NormalTok{regress$ds <-}\StringTok{ }\KeywordTok{as.yearmon}\NormalTok{(}\KeywordTok{paste}\NormalTok{(regress$FISCAL_YR, regress$FISCAL_MO, }\DataTypeTok{sep =} \StringTok{"-"}\NormalTok{))}
+\KeywordTok{setnames}\NormalTok{(regress, }\StringTok{'monthly_customers'}\NormalTok{, }\StringTok{'y'}\NormalTok{)}
+
+\NormalTok{regress2 =}\StringTok{ }\KeywordTok{merge}\NormalTok{(regress, promos, }\DataTypeTok{by =} \KeywordTok{c}\NormalTok{(}\StringTok{'FISCAL_YR'}\NormalTok{, }\StringTok{'FISCAL_MO'}\NormalTok{, }\StringTok{'FISCAL_QTR'}\NormalTok{, }\StringTok{'Segment_Channel'}\NormalTok{), }\DataTypeTok{all.y=}\OtherTok{TRUE}\NormalTok{)}
+\NormalTok{regress3 =}\StringTok{ }\KeywordTok{merge}\NormalTok{(regress2, circ, }\DataTypeTok{by =} \KeywordTok{c}\NormalTok{(}\StringTok{'FISCAL_YR'}\NormalTok{, }\StringTok{'FISCAL_MO'}\NormalTok{, }\StringTok{'FISCAL_QTR'}\NormalTok{, }\StringTok{'Segment'}\NormalTok{), }\DataTypeTok{all.y=}\OtherTok{TRUE}\NormalTok{)}
+\NormalTok{regress3 =}\StringTok{ }\KeywordTok{as.data.table}\NormalTok{(regress3)}
+
+\NormalTok{train =}\StringTok{ }\NormalTok{regress3[FISCAL_YR >=}\StringTok{ }\DecValTok{2016}\NormalTok{]}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Define the forecasting
+Function}\label{define-the-forecasting-function}
+
+The primary function used to build this forecast is called
+\texttt{make\_forecast} defined below. It takes two arguments, a data
+frame (df) as well as a threshold (threshold). The threshold is expected
+to be a year for which we want to forecast (i.e.~2019 or 2020). If you
+want to forecast for 2020, you should set the threshold to 2020,
+otherwise use 2019.
+
+The forecast works by instantiating a prophet object (m) and setting a
+variety of parmeters relating to holidays, seasonality, and
+changepoints. Once the prophet object has been instantiated, a number of
+regressor variables can be added (any covariate column in the data frame
+argument can be incorporated as a regressor to the model.)
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{make_forecast <-}\StringTok{ }\NormalTok{function(df, threshold) \{}
+  \CommentTok{#threshold = 2019}
+  \CommentTok{#df = regress2[Segment_Channel == 'React_Direct1']}
+  \NormalTok{df =}\StringTok{ }\KeywordTok{as.data.table}\NormalTok{(df)}
+  \NormalTok{df =}\StringTok{ }\NormalTok{df[FISCAL_YR <=}\StringTok{ }\NormalTok{threshold]}
+  \NormalTok{m <-}\StringTok{ }\KeywordTok{prophet}\NormalTok{(}\DataTypeTok{seasonality.mode =} \StringTok{'additive'}\NormalTok{, }\DataTypeTok{holidays =} \NormalTok{holidays, }\DataTypeTok{holidays.prior.scale =} \NormalTok{.}\DecValTok{05}\NormalTok{, }\DataTypeTok{seasonality.prior.scale =} \DecValTok{5}\NormalTok{, }\DataTypeTok{changepoint.prior.scale =} \NormalTok{.}\DecValTok{034}\NormalTok{, }\DataTypeTok{weekly.seasonality =} \OtherTok{FALSE}\NormalTok{, }\DataTypeTok{daily.seasonality =} \OtherTok{FALSE}\NormalTok{, }\DataTypeTok{yearly.seasonality =} \OtherTok{FALSE}\NormalTok{)}
+  \NormalTok{m <-}\StringTok{ }\KeywordTok{add_regressor}\NormalTok{(m, }\DataTypeTok{name =} \StringTok{'circ_score'}\NormalTok{)}
+  \CommentTok{#m <- add_regressor(m, name = 'investment')}
+  \CommentTok{#m <- add_regressor(m, name = 'peel_off_depth')}
+  \NormalTok{##m <- add_regressor(m, name = 'post_card_depth')}
+  \CommentTok{#m <- add_regressor(m, name = 'free_ship_depth')}
+  \CommentTok{#m <- add_regressor(m, name = 'flash_sale_depth')}
+  \CommentTok{#m <- add_regressor(m, name = 'global_depth')}
+  \CommentTok{#m <- add_regressor(m, name = 'fp_entire_depth')}
+  \CommentTok{#m <- add_regressor(m, name = 'sp_entire_depth')}
+  \NormalTok{m <-}\StringTok{ }\KeywordTok{add_seasonality}\NormalTok{(m, }\DataTypeTok{name=}\StringTok{'yearly'}\NormalTok{, }\DataTypeTok{period=}\FloatTok{365.25}\NormalTok{, }\DataTypeTok{fourier.order=}\DecValTok{10}\NormalTok{, }\DataTypeTok{prior.scale =} \FloatTok{0.05}\NormalTok{)}
+  \CommentTok{#m <- add_seasonality(m, name = 'quarterly', period = 365.25/4, fourier.order = 5, prior.scale = 15)}
+  \CommentTok{#m <- add_seasonality(m, name = 'monthly', period = 365.25/12, fourier.order = 3, prior.scale = 10)}
+  \NormalTok{m <-}\StringTok{ }\KeywordTok{fit.prophet}\NormalTok{(m, df[FISCAL_YR <=}\StringTok{ }\NormalTok{(threshold -}\StringTok{ }\DecValTok{1}\NormalTok{)])}
+  \NormalTok{future <-}\StringTok{ }\KeywordTok{make_future_dataframe}\NormalTok{(m, }\DataTypeTok{periods =} \DecValTok{12}\NormalTok{, }\DataTypeTok{freq =} \StringTok{'month'}\NormalTok{)}
+  \NormalTok{future$circ_score =}\StringTok{ }\NormalTok{df$circ_score}
+  \CommentTok{#future$investment = df$investment  # FIXME this needs to be correctly specified}
+  \CommentTok{#future$peel_off_depth = df$peel_off_depth}
+  \NormalTok{##future$post_card_depth = df$post_card_depth}
+  \CommentTok{#future$free_ship_depth = df$free_ship_depth}
+  \CommentTok{#future$flash_sale_depth = df$flash_sale_depth}
+  \CommentTok{#future$global_depth = df$global_depth}
+  \CommentTok{#future$fp_entire_depth = df$fp_entire_depth}
+  \CommentTok{#future$sp_entire_depth = df$sp_entire_depth}
+  \NormalTok{fcst <-}\StringTok{ }\KeywordTok{predict}\NormalTok{(m, future)}
+  \KeywordTok{prophet_plot_components}\NormalTok{(m, fcst)}
+  \KeywordTok{return}\NormalTok{(fcst)}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+Note that the function takes in a vector called \texttt{holidays.} We
+will need to define this vector to contain information on all of the
+J.Jill holidays. We do this manually by referencing the J.Jill fiscal
+calendar.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# HOLIDAYS}
+\NormalTok{new_years <-}\StringTok{ }\KeywordTok{tibble}\NormalTok{(}
+  \DataTypeTok{holiday =} \StringTok{'new_years'}\NormalTok{,}
+  \DataTypeTok{ds =} \KeywordTok{as.Date}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{'2017-12-01'}\NormalTok{, }\StringTok{'2018-11-01'}\NormalTok{,}
+                 \StringTok{'2019-12-01'}\NormalTok{)),}
+  \DataTypeTok{lower_window =} \DecValTok{0}\NormalTok{,}
+  \DataTypeTok{upper_window =} \DecValTok{1}
+\NormalTok{)}
+
+\NormalTok{womens_day <-}\StringTok{ }\KeywordTok{tibble}\NormalTok{(}
+  \DataTypeTok{holiday =} \StringTok{'womens_day'}\NormalTok{,}
+  \DataTypeTok{ds =} \KeywordTok{as.Date}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{'2016-02-01'}\NormalTok{, }\StringTok{'2017-02-01'}\NormalTok{, }\StringTok{'2018-02-01'}\NormalTok{,}
+                 \StringTok{'2019-02-01'}\NormalTok{)),}
+  \DataTypeTok{lower_window =} \DecValTok{0}\NormalTok{,}
+  \DataTypeTok{upper_window =} \DecValTok{1}
+\NormalTok{)}
+
+\NormalTok{good_friday <-}\StringTok{ }\KeywordTok{tibble}\NormalTok{(}
+  \DataTypeTok{holiday =} \StringTok{'good_friday'}\NormalTok{,}
+  \DataTypeTok{ds =} \KeywordTok{as.Date}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{'2016-02-01'}\NormalTok{, }\StringTok{'2017-03-01'}\NormalTok{, }\StringTok{'2018-02-01'}\NormalTok{,}
+                 \StringTok{'2019-03-01'}\NormalTok{)),}
+  \DataTypeTok{lower_window =} \DecValTok{0}\NormalTok{,}
+  \DataTypeTok{upper_window =} \DecValTok{1}
+\NormalTok{)}
+
+\NormalTok{easter <-}\StringTok{ }\KeywordTok{tibble}\NormalTok{(}
+  \DataTypeTok{holiday =} \StringTok{'easter'}\NormalTok{,}
+  \DataTypeTok{ds =} \KeywordTok{as.Date}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{'2016-02-01'}\NormalTok{, }\StringTok{'2017-03-01'}\NormalTok{, }\StringTok{'2018-02-01'}\NormalTok{,}
+                 \StringTok{'2019-03-01'}\NormalTok{)),}
+  \DataTypeTok{lower_window =} \DecValTok{0}\NormalTok{,}
+  \DataTypeTok{upper_window =} \DecValTok{1}
+\NormalTok{)}
+
+\NormalTok{mothers_day <-}\StringTok{ }\KeywordTok{tibble}\NormalTok{(}
+  \DataTypeTok{holiday =} \StringTok{'mothers_day'}\NormalTok{,}
+  \DataTypeTok{ds =} \KeywordTok{as.Date}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{'2016-04-01'}\NormalTok{, }\StringTok{'2017-04-01'}\NormalTok{, }\StringTok{'2018-04-01'}\NormalTok{,}
+                 \StringTok{'2019-04-01'}\NormalTok{)),}
+  \DataTypeTok{lower_window =} \DecValTok{0}\NormalTok{,}
+  \DataTypeTok{upper_window =} \DecValTok{1}
+\NormalTok{)}
+
+\NormalTok{memorial <-}\StringTok{ }\KeywordTok{tibble}\NormalTok{(}
+  \CommentTok{# on average +17k customers}
+  \DataTypeTok{holiday =} \StringTok{'memorial'}\NormalTok{,}
+  \DataTypeTok{ds =} \KeywordTok{as.Date}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{'2016-05-01'}\NormalTok{, }\StringTok{'2017-05-01'}\NormalTok{, }\StringTok{'2018-04-01'}\NormalTok{,}
+                 \StringTok{'2019-04-01'}\NormalTok{)),}
+  \DataTypeTok{lower_window =} \DecValTok{0}\NormalTok{,}
+  \DataTypeTok{upper_window =} \DecValTok{1}
+\NormalTok{)}
+
+\NormalTok{independence <-}\StringTok{ }\KeywordTok{tibble}\NormalTok{(}
+  \CommentTok{# on average +5k customers}
+  \DataTypeTok{holiday =} \StringTok{'independence'}\NormalTok{,}
+  \DataTypeTok{ds =} \KeywordTok{as.Date}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{'2016-06-01'}\NormalTok{, }\StringTok{'2017-06-01'}\NormalTok{, }\StringTok{'2018-05-01'}\NormalTok{,}
+                 \StringTok{'2019-05-01'}\NormalTok{)),}
+  \DataTypeTok{lower_window =} \DecValTok{0}\NormalTok{,}
+  \DataTypeTok{upper_window =} \DecValTok{1}
+\NormalTok{)}
+
+\NormalTok{labor <-}\StringTok{ }\KeywordTok{tibble}\NormalTok{(}
+  \CommentTok{# on average +20k customers}
+  \DataTypeTok{holiday =} \StringTok{'labor'}\NormalTok{,}
+  \DataTypeTok{ds =} \KeywordTok{as.Date}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{'2016-08-01'}\NormalTok{, }\StringTok{'2017-08-01'}\NormalTok{, }\StringTok{'2018-08-01'}\NormalTok{,}
+                 \StringTok{'2019-08-01'}\NormalTok{)),}
+  \DataTypeTok{lower_window =} \DecValTok{0}\NormalTok{,}
+  \DataTypeTok{upper_window =} \DecValTok{1}
+\NormalTok{)}
+
+\NormalTok{thanksgiv <-}\StringTok{ }\KeywordTok{tibble}\NormalTok{(}
+  \DataTypeTok{holiday =} \StringTok{'thanksgiv'}\NormalTok{,}
+  \DataTypeTok{ds =} \KeywordTok{as.Date}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{'2016-10-01'}\NormalTok{, }\StringTok{'2017-10-01'}\NormalTok{, }\StringTok{'2018-10-01'}\NormalTok{,}
+                 \StringTok{'2019-10-01'}\NormalTok{)),}
+  \DataTypeTok{lower_window =} \DecValTok{0}\NormalTok{,}
+  \DataTypeTok{upper_window =} \DecValTok{1}
+\NormalTok{)}
+
+\NormalTok{black_fri <-}\StringTok{ }\KeywordTok{tibble}\NormalTok{(}
+  \DataTypeTok{holiday =} \StringTok{'black_fri'}\NormalTok{,}
+  \DataTypeTok{ds =} \KeywordTok{as.Date}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{'2016-10-01'}\NormalTok{, }\StringTok{'2017-10-01'}\NormalTok{, }\StringTok{'2018-10-01'}\NormalTok{,}
+                 \StringTok{'2019-10-01'}\NormalTok{)),}
+  \DataTypeTok{lower_window =} \DecValTok{0}\NormalTok{,}
+  \DataTypeTok{upper_window =} \DecValTok{1}
+\NormalTok{)}
+
+\NormalTok{cyber_monday <-}\StringTok{ }\KeywordTok{tibble}\NormalTok{(}
+  \DataTypeTok{holiday =} \StringTok{'cyber_monday'}\NormalTok{,}
+  \DataTypeTok{ds =} \KeywordTok{as.Date}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{'2016-11-01'}\NormalTok{, }\StringTok{'2017-11-01'}\NormalTok{, }\StringTok{'2018-10-01'}\NormalTok{,}
+                 \StringTok{'2019-11-01'}\NormalTok{)),}
+  \DataTypeTok{lower_window =} \DecValTok{0}\NormalTok{,}
+  \DataTypeTok{upper_window =} \DecValTok{1}
+\NormalTok{)}
+
+\NormalTok{christ_eve <-}\StringTok{ }\KeywordTok{tibble}\NormalTok{(}
+  \DataTypeTok{holiday =} \StringTok{'christ_eve'}\NormalTok{,}
+  \DataTypeTok{ds =} \KeywordTok{as.Date}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{'2016-11-01'}\NormalTok{, }\StringTok{'2017-11-01'}\NormalTok{, }\StringTok{'2018-11-01'}\NormalTok{,}
+                 \StringTok{'2019-11-01'}\NormalTok{)),}
+  \DataTypeTok{lower_window =} \DecValTok{0}\NormalTok{,}
+  \DataTypeTok{upper_window =} \DecValTok{1}
+\NormalTok{)}
+
+\NormalTok{christ <-}\StringTok{ }\KeywordTok{tibble}\NormalTok{(}
+  \DataTypeTok{holiday =} \StringTok{'christ'}\NormalTok{,}
+  \DataTypeTok{ds =} \KeywordTok{as.Date}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{'2016-11-01'}\NormalTok{, }\StringTok{'2017-11-01'}\NormalTok{, }\StringTok{'2018-11-01'}\NormalTok{,}
+                 \StringTok{'2019-11-01'}\NormalTok{)),}
+  \DataTypeTok{lower_window =} \DecValTok{0}\NormalTok{,}
+  \DataTypeTok{upper_window =} \DecValTok{1}
+\NormalTok{)}
+
+\NormalTok{nye <-}\StringTok{ }\KeywordTok{tibble}\NormalTok{(}
+  \DataTypeTok{holiday =} \StringTok{'nye'}\NormalTok{,}
+  \DataTypeTok{ds =} \KeywordTok{as.Date}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{'2016-11-01'}\NormalTok{, }\StringTok{'2017-12-01'}\NormalTok{, }\StringTok{'2018-11-01'}\NormalTok{,}
+                 \StringTok{'2019-11-01'}\NormalTok{)),}
+  \DataTypeTok{lower_window =} \DecValTok{0}\NormalTok{,}
+  \DataTypeTok{upper_window =} \DecValTok{1}
+\NormalTok{)}
+
+
+
+
+
+
+\NormalTok{holidays <-}\StringTok{ }\KeywordTok{bind_rows}\NormalTok{(nye, christ, cyber_monday, christ_eve,black_fri, thanksgiv, labor, independence, memorial, mothers_day, easter, good_friday, womens_day, new_years)}
+\end{Highlighting}
+\end{Shaded}
+
+Now that our function is defined and our holidays are coded, the next
+step is to produce a forecast for each of the segment channels in
+question. We will use R's built in \texttt{dplyr} package to do this
+programmatically.
+
+\subsubsection{Call our function for each segment channel in our
+dataframe}\label{call-our-function-for-each-segment-channel-in-our-dataframe}
+
+This block of code will run our make forecast function for 2019 9 times
+(note that we are grouping by Segment Channel). This means the forecast
+will run once for each segment channel that exists in our data frame.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{fcst =}\StringTok{ }\NormalTok{train %>%}\StringTok{  }
+\StringTok{  }\KeywordTok{group_by}\NormalTok{(Segment_Channel) %>%}
+\StringTok{  }\KeywordTok{do}\NormalTok{(}\KeywordTok{make_forecast}\NormalTok{(., }\DecValTok{2019}\NormalTok{)) %>%}\StringTok{ }
+\StringTok{  }\NormalTok{dplyr::}\KeywordTok{select}\NormalTok{(ds, Segment_Channel, yhat)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{prophet_writeup_files/figure-latex/unnamed-chunk-8-1.pdf}
+\includegraphics{prophet_writeup_files/figure-latex/unnamed-chunk-8-2.pdf}
+\includegraphics{prophet_writeup_files/figure-latex/unnamed-chunk-8-3.pdf}
+\includegraphics{prophet_writeup_files/figure-latex/unnamed-chunk-8-4.pdf}
+\includegraphics{prophet_writeup_files/figure-latex/unnamed-chunk-8-5.pdf}
+\includegraphics{prophet_writeup_files/figure-latex/unnamed-chunk-8-6.pdf}
+\includegraphics{prophet_writeup_files/figure-latex/unnamed-chunk-8-7.pdf}
+\includegraphics{prophet_writeup_files/figure-latex/unnamed-chunk-8-8.pdf}
+\includegraphics{prophet_writeup_files/figure-latex/unnamed-chunk-8-9.pdf}
+
+Now we have a forecast at the monthly level. The next step will be to
+calculate how this monthly forecast will translate to quarterly and
+yearly totals. We will define a function \texttt{calc\_year\_end} to do
+this for us. This function will use two files, \texttt{monthly\_pacing}
+taken from \texttt{percentages.txt} and \texttt{quarter\_totals} taken
+from \texttt{quarter\_totals.txt.} Both of these files were sourced from
+alteryx workflow: \texttt{percentages.yxmd}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{monthly_pacing =}\StringTok{ }\KeywordTok{fread}\NormalTok{(}\StringTok{"percentages.txt"}\NormalTok{, }\DataTypeTok{sep=} \StringTok{'|'}\NormalTok{)}
+\KeywordTok{setnames}\NormalTok{(monthly_pacing, }\StringTok{'Fiscal_Mo'}\NormalTok{, }\StringTok{'FISCAL_MO'}\NormalTok{)}
+
+
+
+\NormalTok{quarterly_pacing =}\StringTok{ }\KeywordTok{fread}\NormalTok{(}\StringTok{"quarter_totals.txt"}\NormalTok{, }\DataTypeTok{sep=} \StringTok{'|'}\NormalTok{)}
+\NormalTok{quarterly_pacing[, quarter :}\ErrorTok{=}\StringTok{ }\KeywordTok{ifelse}\NormalTok{(FISCAL_MO <=}\StringTok{ }\DecValTok{3}\NormalTok{, }\DecValTok{1}\NormalTok{, }\KeywordTok{ifelse}\NormalTok{(FISCAL_MO <=}\StringTok{ }\DecValTok{6}\NormalTok{, }\DecValTok{2}\NormalTok{, }\KeywordTok{ifelse}\NormalTok{(FISCAL_MO <=}\StringTok{ }\DecValTok{9}\NormalTok{, }\DecValTok{3}\NormalTok{, }\DecValTok{4}\NormalTok{)))]}
+\NormalTok{quarterly_pacing[, quarter_sum :}\ErrorTok{=}\StringTok{ }\KeywordTok{sum}\NormalTok{(cust_month), by=}\KeywordTok{c}\NormalTok{(}\StringTok{"quarter"}\NormalTok{, }\StringTok{"Customer_Type"}\NormalTok{)]}
+\NormalTok{quarterly_pacing[, table :}\ErrorTok{=}\StringTok{ }\NormalTok{cust_quarter/quarter_sum]}
+\NormalTok{quarter_table =}\StringTok{ }\KeywordTok{unique}\NormalTok{(quarterly_pacing[, }\KeywordTok{c}\NormalTok{(}\StringTok{"Customer_Type"}\NormalTok{, }\StringTok{"quarter"}\NormalTok{, }\StringTok{"table"}\NormalTok{, }\StringTok{"quarter_sum"}\NormalTok{)])}
+\KeywordTok{setnames}\NormalTok{(quarter_table, }\StringTok{"Customer_Type"}\NormalTok{, }\StringTok{"Segment_Channel"}\NormalTok{)}
+
+
+\NormalTok{calc_year_end <-}\StringTok{ }\NormalTok{function(cast_dat, year, hist) \{}
+  \NormalTok{et =}\StringTok{ }\KeywordTok{as.data.table}\NormalTok{(cast_dat)}
+  \NormalTok{et[, FISCAL_MO :}\ErrorTok{=}\StringTok{ }\KeywordTok{month}\NormalTok{(ds)]}
+  \NormalTok{et[, quarter :}\ErrorTok{=}\StringTok{ }\KeywordTok{ifelse}\NormalTok{(FISCAL_MO %in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{), }\DecValTok{1}\NormalTok{, }\KeywordTok{ifelse}\NormalTok{(FISCAL_MO %in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\DecValTok{4}\NormalTok{,}\DecValTok{5}\NormalTok{,}\DecValTok{6}\NormalTok{), }\DecValTok{2}\NormalTok{, }\KeywordTok{ifelse}\NormalTok{(FISCAL_MO %in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\DecValTok{7}\NormalTok{,}\DecValTok{8}\NormalTok{,}\DecValTok{9}\NormalTok{), }\DecValTok{3}\NormalTok{,}\DecValTok{4}\NormalTok{)))]}
+  \NormalTok{et[, day :}\ErrorTok{=}\StringTok{ }\KeywordTok{format}\NormalTok{(}\KeywordTok{as.Date}\NormalTok{(ds,}\DataTypeTok{format=}\StringTok{"%Y-%m-%d"}\NormalTok{), }\StringTok{"%d"}\NormalTok{)]}
+  \NormalTok{et[, FISCAL_YR :}\ErrorTok{=}\StringTok{ }\KeywordTok{year}\NormalTok{(ds)]}
+  \NormalTok{et =}\StringTok{ }\NormalTok{et[ day ==}\StringTok{ '01'}\NormalTok{]}
+  \KeywordTok{setnames}\NormalTok{(et, }\StringTok{'yhat'}\NormalTok{, }\StringTok{'Used_Forecast'}\NormalTok{)}
+  
+  
+  
+  \CommentTok{#wrap up}
+  \NormalTok{df2 =}\StringTok{ }\NormalTok{hist[, }\KeywordTok{c}\NormalTok{(}\StringTok{'Segment_Channel'}\NormalTok{, }\StringTok{'FISCAL_YR'}\NormalTok{, }\StringTok{'FISCAL_MO'}\NormalTok{, }\StringTok{'y'}\NormalTok{)]}
+  \NormalTok{et2 =}\StringTok{ }\KeywordTok{merge}\NormalTok{(et, df2, }\DataTypeTok{by=}\KeywordTok{c}\NormalTok{(}\StringTok{'Segment_Channel'}\NormalTok{, }\StringTok{'FISCAL_MO'}\NormalTok{, }\StringTok{'FISCAL_YR'}\NormalTok{), }\DataTypeTok{all.x=}\OtherTok{TRUE}\NormalTok{)}
+  \NormalTok{et2[, Used_Forecasta :}\ErrorTok{=}\StringTok{ }\KeywordTok{ifelse}\NormalTok{(}\KeywordTok{is.na}\NormalTok{(y), Used_Forecast, y)]}
+
+  
+  \NormalTok{year_agg =}\StringTok{ }\KeywordTok{merge}\NormalTok{(et2, monthly_pacing, }\DataTypeTok{by =} \KeywordTok{c}\NormalTok{(}\StringTok{"Segment_Channel"}\NormalTok{, }\StringTok{"FISCAL_MO"}\NormalTok{))}
+  \NormalTok{year_agg =}\StringTok{ }\KeywordTok{merge}\NormalTok{(year_agg, quarter_table, }\DataTypeTok{by =} \KeywordTok{c}\NormalTok{(}\StringTok{"quarter"}\NormalTok{, }\StringTok{"Segment_Channel"}\NormalTok{))}
+  \NormalTok{year_agg[, Year_Number2 :}\ErrorTok{=}\StringTok{ }\NormalTok{Used_Forecast *}\StringTok{ }\NormalTok{percent]}
+  \NormalTok{year_agg[, Year_Number2a :}\ErrorTok{=}\StringTok{ }\NormalTok{Used_Forecasta *}\StringTok{ }\NormalTok{percent]}
+  \NormalTok{year_agg[, qnum :}\ErrorTok{=}\StringTok{ }\NormalTok{table*Used_Forecast]}
+  \NormalTok{year_agg[, qnuma :}\ErrorTok{=}\StringTok{ }\NormalTok{table *}\StringTok{ }\NormalTok{Used_Forecasta]}
+
+  
+  \KeywordTok{return}\NormalTok{(year_agg)}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Examine results of forecasting
+run}\label{examine-results-of-forecasting-run}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{final_fcst =}\StringTok{ }\KeywordTok{calc_year_end}\NormalTok{(fcst, }\DecValTok{2019}\NormalTok{, regress3) }
+\NormalTok{final_fcst =}\StringTok{ }\NormalTok{final_fcst[FISCAL_YR ==}\StringTok{ }\DecValTok{2019}\NormalTok{]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#estimates = c(1, 0.544586951, 0.366562835, 0.337894522)}
+\CommentTok{#q_s = final_fcst %>% group_by(quarter, Segment_Channel) %>% summarize(sum(qnuma))}
+\CommentTok{#q_s}
+\CommentTok{#sum(q_s*estimates) #1921}
+\end{Highlighting}
+\end{Shaded}
+
+Once we are happy with the output of our forecast, the final step is to
+write it to a csv file. The data from this csv file should be pasted
+into the \texttt{Prophet\ Forecast\ Data} tab of august\_2020\_v2 excel
+workbook. The data and forecast will update automatically after copying
+and pasting.
+
+\subsubsection{Write out forecast to csv
+file}\label{write-out-forecast-to-csv-file}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{write.csv}\NormalTok{(final_fcst, }\StringTok{'~/Desktop/prophet_aug.csv'}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+
+\end{document}

@@ -1,0 +1,2930 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.1">
+  <Nodes>
+    <Node ToolID="103">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="65" y="190" width="142.7585" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 103</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="99">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="90" y="246" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\jj5jxt\Desktop\june\master31.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>master31.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="ORDER_DETAIL_KEY" size="10" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="ORDER_KEY" size="10" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="CHANNEL" size="1" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="MASTER_CHANNEL" size="1" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="PRICE_CD" size="2" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="STORE_NB" size="10" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.ORDERS4.txt" type="V_String" />
+                <Field name="SHIPPED_COST_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="SHIPPED_GROSS_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="SHIPPED_QTY" source="File: (Multiple Sources)" type="Int16" />
+                <Field name="ORDERED_QTY" source="File: (Multiple Sources)" type="Float" />
+                <Field name="RETURNED_QTY" source="File: (Multiple Sources)" type="Float" />
+                <Field name="RETURN_DATE" source="Formula: DateTimeParse([_CurrentField_], '%m/%d/%Y')" type="Date" />
+                <Field name="RETURNED_SOLD_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="RETURNED_GROSS_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="RETURNED_COST_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="ORDERED_SOLD_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="ORDERED_GROSS_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="ORDERED_COST_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="EXCLUDE_IND" size="1" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="SHIPPED_SOLD_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="ALIAS" size="12" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="SKU_CD" size="15" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="ITEM_NB" size="20" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="COLOR_CD" size="3" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="DAY_OF_THE_WK" size="9" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="FISCAL_DAY_OF_THE_YR" source="File: (Multiple Sources)" type="Int64" />
+                <Field name="FISCAL_WK" source="(Multiple Sources)" type="Byte" />
+                <Field name="FISCAL_MO" source="(Multiple Sources)" type="Byte" />
+                <Field name="FISCAL_QTR" source="(Multiple Sources)" type="Byte" />
+                <Field name="FISCAL_YR" source="(Multiple Sources)" type="Int16" />
+                <Field name="PAY_TYPE_CD" size="5" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="CUSTOMER_NB" size="16" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="ORDER_DATE" source="Formula: DateTimeParse([_CurrentField_], '%m/%d/%Y')" type="Date" />
+                <Field name="ORDER_TIME" source="File: (Multiple Sources)" type="Time" />
+                <Field name="SIZE_CD" size="18" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="FABRIC_CATEGORY_DESC" size="200" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="DESCRIPTION" size="50" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="EXTENDED_SIZE_DESC" size="200" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="COLOR_FAMILY_DESC" size="200" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="END_USE_DESC" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="STYLETYPEDESC" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="BODY_NB" size="30" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="ORIGINAL_RETAIL_PRICE_AMT" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="Float" />
+                <Field name="CLASS_NAME" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="DEPARTMENT_NAME" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="BIRTH_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="CLOSEST_STORE1_DIST" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="FIRST_CATALOG_ORDER_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="FIRST_ORDER_CHANNEL" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="FIRST_RETAIL_ORDER_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="FIRST_WEB_ORDER_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="IS_CALLABLE_IND" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="IS_EMAILABLE_IND" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="IS_JJCH_IND" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="JJCH_CLOSE_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="JJCH_OPEN_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="STATE" size="2" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="ZIP" size="7" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="GENDER" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="HIGH_RETURNER_IND" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="LAST_ORDER_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="ILINK" size="10" source="(Multiple Sources)" type="V_String" />
+                <Field description="Formula: if isnull([FIRST_ORDER_DATE])&#xA;then [Row-1:FIRST_ORDER_DATE] &#xA;else [FIRST_ORDER_DATE] endif" name="FIRST_ORDER_DATE" source="Formula: if isnull([FIRST_ORDER_DATE])&#xA;then [Row-1:FIRST_ORDER_DATE] &#xA;else [FIRST_ORDER_DATE] endif" type="Date" />
+                <Field name="fiscal_half" source="(Multiple Sources)" type="Int64" />
+                <Field name="recency_week" source="Formula: IF [Max_Days_Lapsed]&gt;365 THEN 2&#xA;ELSEIF [Min_Days_Lapsed]=0 THEN 0&#xA;ELSEIF [Max_Days_Lapsed]&gt;0 THEN 1&#xA;ELSE Null()&#xA;ENDIF" type="Byte" />
+                <Field name="recency_qtr" source="Formula: IF [Max_Days_Lapsed]&gt;365 THEN 2&#xA;ELSEIF [Min_Days_Lapsed]=0 THEN 0&#xA;ELSEIF [Max_Days_Lapsed]&gt;0 THEN 1&#xA;ELSE Null()&#xA;ENDIF" type="Byte" />
+                <Field name="recency_yr" source="Formula: IF [Max_Days_Lapsed]&gt;365 THEN 2&#xA;ELSEIF [Min_Days_Lapsed]=0 THEN 0&#xA;ELSEIF [Max_Days_Lapsed]&gt;0 THEN 1&#xA;ELSE Null()&#xA;ENDIF" type="Byte" />
+                <Field name="recency_half" source="Formula: IF [Max_Days_Lapsed]&gt;365 THEN 2 &#xA;ELSEIF [Min_Days_Lapsed]=0 THEN 0&#xA;ELSEIF [Max_Days_Lapsed]&gt;0 THEN 1&#xA;ELSE Null()&#xA;ENDIF" type="Byte" />
+                <Field name="recency_month" source="Formula: IF [Max_Days_Lapsed]&gt;365 THEN 2&#xA;ELSEIF [Min_Days_Lapsed]=0 THEN 0&#xA;ELSEIF [Max_Days_Lapsed]&gt;0 THEN 1&#xA;ELSE Null()&#xA;ENDIF" type="Byte" />
+                <Field description="Formula: if [ilink_day] &gt; 1 then [Row-1:ORDER_DATE] else [PRIOR_ORDER_DATE] endif" name="PRIOR_ORDER_DATE" source="Formula: if [ilink_day] &gt; 1 then [Row-1:ORDER_DATE] else [PRIOR_ORDER_DATE] endif" type="Date" />
+                <Field description="Formula: [Row-1:ilink_day]+1" name="ilink_day" source="Formula: [Row-1:ilink_day]+1" type="Int32" />
+                <Field description="Formula: DateTimeDiff([ORDER_DATE],[Row+1:ORDER_DATE],'days')" name="Min_days_lapsed" source="Formula: IF IsNull([Days_Lapsed]) and IsNull([FIRST_ORDER_DATE])&#xA; THEN 0&#xA;ELSEIF IsNull([days_lapsed]) and IsNull([PRIOR_ORDER_DATE])&#xA; THEN DateTimeDiff([ORDER_DATE],[FIRST_ORDER_DATE],&quot;days&quot;)&#xA;ELSEIF IsNull([days_lapsed]) and !IsNull([PRIOR_ORDER_DATE])&#xA; THEN DateTimeDiff([ORDER_DATE],[PRIOR_ORDER_DATE],&quot;days&quot;)&#xA; ELSE [Days_Lapsed] &#xA;ENDIF" type="Int32" />
+                <Field description="Formula: DateTimeDiff([ORDER_DATE],[Row+1:ORDER_DATE],'days')" name="Max_days_lapsed" source="Formula: IF IsNull([Days_Lapsed]) and IsNull([FIRST_ORDER_DATE])&#xA; THEN 0&#xA;ELSEIF IsNull([days_lapsed]) and IsNull([PRIOR_ORDER_DATE])&#xA; THEN DateTimeDiff([ORDER_DATE],[FIRST_ORDER_DATE],&quot;days&quot;)&#xA;ELSEIF IsNull([days_lapsed]) and !IsNull([PRIOR_ORDER_DATE])&#xA; THEN DateTimeDiff([ORDER_DATE],[PRIOR_ORDER_DATE],&quot;days&quot;)&#xA; ELSE [Days_Lapsed] &#xA;ENDIF" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="100">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="342" y="234" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="FISCAL_MO" action="GroupBy" rename="FISCAL_MO" />
+                <SummarizeField field="ILINK" action="CountDistinctNonNull" rename="Used_Forecast" />
+                <SummarizeField field="recency_month" action="GroupBy" rename="recency_month" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="101">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="186" y="246" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[FISCAL_YR] = 2018
+and [ORDERED_QTY] &gt; 0
+and [EXCLUDE_IND] = 'N' 
+and !IsNull([ILINK])</Expression>
+              <Mode>Custom</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>FISCAL_YR</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2018-09-11 17:07:10</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>2018</Operand>
+                  <StartDate>2018-09-11 17:07:10</StartDate>
+                  <EndDate>2018-09-11 17:07:10</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[FISCAL_YR] = 2018
+and [ORDERED_QTY] &gt; 0
+and [EXCLUDE_IND] = 'N' 
+and !IsNull([I...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="102">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="498" y="234" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">C:\Users\jj5jxt\Desktop\september\actuals.txt</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>|</Delimeter>
+                <ForceQuotes>False</ForceQuotes>
+                <HeaderRow>True</HeaderRow>
+                <CodePage>28591</CodePage>
+                <WriteBOM>True</WriteBOM>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>actuals.txt</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="77" y="477.9998" width="136.4582" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 45</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="30">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="102" y="522" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\jj5jxt\Desktop\june\master_30k.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>master_30k.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="ORDER_DETAIL_KEY" size="10" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="ORDER_KEY" size="10" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="CHANNEL" size="1" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="MASTER_CHANNEL" size="1" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="PRICE_CD" size="2" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="SHIPPED_COST_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="SHIPPED_GROSS_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="SHIPPED_QTY" source="File: (Multiple Sources)" type="Int16" />
+                <Field name="ORDERED_QTY" source="File: (Multiple Sources)" type="Float" />
+                <Field name="RETURNED_QTY" source="File: (Multiple Sources)" type="Float" />
+                <Field name="RETURN_DATE" source="Formula: DateTimeParse([_CurrentField_], '%m/%d/%Y')" type="Date" />
+                <Field name="RETURNED_SOLD_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="RETURNED_GROSS_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="RETURNED_COST_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="ORDERED_SOLD_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="ORDERED_GROSS_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="ORDERED_COST_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="EXCLUDE_IND" size="1" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="SHIPPED_SOLD_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="ALIAS" size="12" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="SKU_CD" size="15" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="ITEM_NB" size="20" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="COLOR_CD" size="3" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="DAY_OF_THE_WK" size="9" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="FISCAL_DAY_OF_THE_YR" source="File: (Multiple Sources)" type="Int64" />
+                <Field name="FISCAL_WK" source="(Multiple Sources)" type="Byte" />
+                <Field name="FISCAL_MO" source="(Multiple Sources)" type="Byte" />
+                <Field name="FISCAL_QTR" source="(Multiple Sources)" type="Byte" />
+                <Field name="FISCAL_YR" source="(Multiple Sources)" type="Int16" />
+                <Field name="PAY_TYPE_CD" size="5" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="CUSTOMER_NB" size="16" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="ORDER_DATE" source="Formula: DateTimeParse([_CurrentField_], '%m/%d/%Y')" type="Date" />
+                <Field name="ORDER_TIME" source="File: (Multiple Sources)" type="Time" />
+                <Field name="SIZE_CD" size="18" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="FABRIC_CATEGORY_DESC" size="200" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="DESCRIPTION" size="50" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="EXTENDED_SIZE_DESC" size="200" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="COLOR_FAMILY_DESC" size="200" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="END_USE_DESC" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="STYLETYPEDESC" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="BODY_NB" size="30" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="ORIGINAL_RETAIL_PRICE_AMT" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="Float" />
+                <Field name="CLASS_NAME" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="DEPARTMENT_NAME" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="BIRTH_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="CLOSEST_STORE1_DIST" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="FIRST_CATALOG_ORDER_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="FIRST_ORDER_CHANNEL" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="FIRST_RETAIL_ORDER_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="FIRST_WEB_ORDER_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="IS_CALLABLE_IND" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="IS_EMAILABLE_IND" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="IS_JJCH_IND" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="JJCH_CLOSE_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="JJCH_OPEN_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="STATE" size="2" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="ZIP" size="7" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="GENDER" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="HIGH_RETURNER_IND" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="LAST_ORDER_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="ILINK" size="10" source="(Multiple Sources)" type="V_String" />
+                <Field description="Formula: if isnull([FIRST_ORDER_DATE])&#xA;then [Row-1:FIRST_ORDER_DATE] &#xA;else [FIRST_ORDER_DATE] endif" name="FIRST_ORDER_DATE" source="Formula: if isnull([FIRST_ORDER_DATE])&#xA;then [Row-1:FIRST_ORDER_DATE] &#xA;else [FIRST_ORDER_DATE] endif" type="Date" />
+                <Field name="fiscal_half" source="(Multiple Sources)" type="Int64" />
+                <Field name="recency_week" source="Formula: IF [Max_Days_Lapsed]&gt;365 THEN 2&#xA;ELSEIF [Min_Days_Lapsed]=0 THEN 0&#xA;ELSEIF [Max_Days_Lapsed]&gt;0 THEN 1&#xA;ELSE Null()&#xA;ENDIF" type="Byte" />
+                <Field name="recency_qtr" source="Formula: IF [Max_Days_Lapsed]&gt;365 THEN 2&#xA;ELSEIF [Min_Days_Lapsed]=0 THEN 0&#xA;ELSEIF [Max_Days_Lapsed]&gt;0 THEN 1&#xA;ELSE Null()&#xA;ENDIF" type="Byte" />
+                <Field name="recency_yr" source="Formula: IF [Max_Days_Lapsed]&gt;365 THEN 2&#xA;ELSEIF [Min_Days_Lapsed]=0 THEN 0&#xA;ELSEIF [Max_Days_Lapsed]&gt;0 THEN 1&#xA;ELSE Null()&#xA;ENDIF" type="Byte" />
+                <Field name="recency_half" source="Formula: IF [Max_Days_Lapsed]&gt;365 THEN 2 &#xA;ELSEIF [Min_Days_Lapsed]=0 THEN 0&#xA;ELSEIF [Max_Days_Lapsed]&gt;0 THEN 1&#xA;ELSE Null()&#xA;ENDIF" type="Byte" />
+                <Field name="recency_month" source="Formula: IF [Max_Days_Lapsed]&gt;365 THEN 2&#xA;ELSEIF [Min_Days_Lapsed]=0 THEN 0&#xA;ELSEIF [Max_Days_Lapsed]&gt;0 THEN 1&#xA;ELSE Null()&#xA;ENDIF" type="Byte" />
+                <Field description="Formula: if [ilink_day] &gt; 1 then [Row-1:ORDER_DATE] else [PRIOR_ORDER_DATE] endif" name="PRIOR_ORDER_DATE" source="Formula: if [ilink_day] &gt; 1 then [Row-1:ORDER_DATE] else [PRIOR_ORDER_DATE] endif" type="Date" />
+                <Field description="Formula: [Row-1:ilink_day]+1" name="ilink_day" source="Formula: [Row-1:ilink_day]+1" type="Int32" />
+                <Field description="Formula: DateTimeDiff([ORDER_DATE],[Row+1:ORDER_DATE],'days')" name="Min_days_lapsed" source="Formula: IF IsNull([Days_Lapsed]) and IsNull([FIRST_ORDER_DATE])&#xA; THEN 0&#xA;ELSEIF IsNull([days_lapsed]) and IsNull([PRIOR_ORDER_DATE])&#xA; THEN DateTimeDiff([ORDER_DATE],[FIRST_ORDER_DATE],&quot;days&quot;)&#xA;ELSEIF IsNull([days_lapsed]) and !IsNull([PRIOR_ORDER_DATE])&#xA; THEN DateTimeDiff([ORDER_DATE],[PRIOR_ORDER_DATE],&quot;days&quot;)&#xA; ELSE [Days_Lapsed] &#xA;ENDIF" type="Int32" />
+                <Field description="Formula: DateTimeDiff([ORDER_DATE],[Row+1:ORDER_DATE],'days')" name="Max_days_lapsed" source="Formula: IF IsNull([Days_Lapsed]) and IsNull([FIRST_ORDER_DATE])&#xA; THEN 0&#xA;ELSEIF IsNull([days_lapsed]) and IsNull([PRIOR_ORDER_DATE])&#xA; THEN DateTimeDiff([ORDER_DATE],[FIRST_ORDER_DATE],&quot;days&quot;)&#xA;ELSEIF IsNull([days_lapsed]) and !IsNull([PRIOR_ORDER_DATE])&#xA; THEN DateTimeDiff([ORDER_DATE],[PRIOR_ORDER_DATE],&quot;days&quot;)&#xA; ELSE [Days_Lapsed] &#xA;ENDIF" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="31">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="666" y="521.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="ILINK" action="GroupBy" rename="ILINK" />
+                <SummarizeField field="FISCAL_YR" action="GroupBy" rename="FISCAL_YR" />
+                <SummarizeField field="FISCAL_QTR" action="GroupBy" rename="FISCAL_QTR" />
+                <SummarizeField field="FISCAL_MO" action="GroupBy" rename="FISCAL_MO" />
+                <SummarizeField field="MASTER_CHANNEL" action="First" rename="Channel" />
+                <SummarizeField field="MASTER_CHANNEL" action="CountDistinctNonNull" rename="Channels" />
+                <SummarizeField field="recency_yr" action="GroupBy" rename="Recency" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="32">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="378.0002" y="521.9998" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression><![CDATA[!IsNull([ILINK]) ]]></Expression>
+              <Mode>Custom</Mode>
+              <Simple>
+                <Operator>IsNotNull</Operator>
+                <Field>ILINK</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>False</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2018-08-07 13:02:37</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2018-08-07 13:02:37</StartDate>
+                  <EndDate>2018-08-07 13:02:37</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[!IsNull([ILINK]) ]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="33">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="762" y="521.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [Channels]&gt;1 THEN &#xA;	'Omni' &#xA;ELSEIF [Channel]='D' THEN&#xA;	'Direct1' &#xA;ELSE&#xA;	'Retail1' &#xA;ENDIF" field="Channel" size="20" type="V_String" />
+                <FormulaField expression="If [Recency] = 0 then 'NTB_'+[Channel]&#xA;elseif [Recency] = 1 then 'Existing_'+[Channel]&#xA;ELSE 'React_'+[Channel]&#xA;endif" field="Customer_Type" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Channel = IF [Channels]&gt;1 THEN 
+	'Omni' 
+ELSEIF [Channel]='D' THEN
+	'Direct1' 
+E...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="34">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="186" y="521.9998" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="ORDER_KEY" selected="True" />
+                <SelectField field="CHANNEL" selected="True" />
+                <SelectField field="MASTER_CHANNEL" selected="True" size="20" />
+                <SelectField field="SHIPPED_COST_AMT" selected="True" />
+                <SelectField field="SHIPPED_GROSS_AMT" selected="True" />
+                <SelectField field="SHIPPED_QTY" selected="True" />
+                <SelectField field="ORDERED_QTY" selected="True" />
+                <SelectField field="ORDERED_SOLD_AMT" selected="True" />
+                <SelectField field="ORDERED_GROSS_AMT" selected="True" />
+                <SelectField field="ORDERED_COST_AMT" selected="True" />
+                <SelectField field="SHIPPED_SOLD_AMT" selected="True" />
+                <SelectField field="FISCAL_WK" selected="True" />
+                <SelectField field="FISCAL_MO" selected="True" />
+                <SelectField field="FISCAL_QTR" selected="True" />
+                <SelectField field="FISCAL_YR" selected="True" />
+                <SelectField field="ORDER_DATE" selected="True" />
+                <SelectField field="ILINK" selected="True" />
+                <SelectField field="recency_week" selected="True" />
+                <SelectField field="recency_qtr" selected="True" />
+                <SelectField field="recency_yr" selected="True" />
+                <SelectField field="recency_month" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="35">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="858" y="521.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="FISCAL_YR" action="GroupBy" rename="FISCAL_YR" />
+                <SummarizeField field="FISCAL_QTR" action="GroupBy" rename="FISCAL_QTR" />
+                <SummarizeField field="FISCAL_MO" action="GroupBy" rename="FISCAL_MO" />
+                <SummarizeField field="Customer_Type" action="GroupBy" rename="Customer_Type" />
+                <SummarizeField field="ILINK" action="CountDistinct" rename="Customers" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="36">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="570" y="521.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>!IsNull([recency_month])</Expression>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>IsNotNull</Operator>
+                <Field>recency_month</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>False</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2018-08-06 13:41:00</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2018-08-06 13:41:00</StartDate>
+                  <EndDate>2018-08-06 13:41:00</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>!IsNull([recency_month])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="37">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="474.0002" y="521.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>!IsNull([FISCAL_QTR])</Expression>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>IsNotNull</Operator>
+                <Field>FISCAL_QTR</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2018-08-07 13:04:43</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2018-08-07 13:04:43</StartDate>
+                  <EndDate>2018-08-07 13:04:43</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>!IsNull([FISCAL_QTR])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="38">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="282" y="522.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[FISCAL_YR] &gt;= 2014</Expression>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>&gt;=</Operator>
+                <Field>FISCAL_YR</Field>
+                <Operands>
+                  <PeriodDate>2018-08-07 13:05:33</PeriodDate>
+                  <PeriodType>days</PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <StartDate>2018-08-07 13:05:33</StartDate>
+                  <EndDate>2018-08-07 13:05:33</EndDate>
+                  <Operand>2014</Operand>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[FISCAL_YR] &gt;= 2014</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="39">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="678.0002" y="701.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="ILINK" action="GroupBy" rename="ILINK" />
+                <SummarizeField field="FISCAL_YR" action="GroupBy" rename="FISCAL_YR" />
+                <SummarizeField field="FISCAL_MO" action="GroupBy" rename="FISCAL_MO" />
+                <SummarizeField field="MASTER_CHANNEL" action="First" rename="Channel" />
+                <SummarizeField field="MASTER_CHANNEL" action="CountDistinctNonNull" rename="Channels" />
+                <SummarizeField field="recency_yr" action="First" rename="Recency" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="40">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="774" y="701.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [Channels]&gt;1 THEN &#xA;	'Omni' &#xA;ELSEIF [Channel]='D' THEN&#xA;	'Direct1' &#xA;ELSE&#xA;	'Retail1' &#xA;ENDIF" field="Channel" size="20" type="V_String" />
+                <FormulaField expression="If [Recency] = 0 then 'NTB_'+[Channel]&#xA;elseif [Recency] = 1 then 'Existing_'+[Channel]&#xA;ELSE 'React_'+[Channel]&#xA;endif" field="Customer_Type" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Channel = IF [Channels]&gt;1 THEN 
+	'Omni' 
+ELSEIF [Channel]='D' THEN
+	'Direct1' 
+E...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="41">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="870" y="701.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="FISCAL_YR" action="GroupBy" rename="FISCAL_YR" />
+                <SummarizeField field="Customer_Type" action="GroupBy" rename="Customer_Type" />
+                <SummarizeField field="ILINK" action="GroupBy" rename="uniques" />
+                <SummarizeField field="FISCAL_MO" action="Min" rename="Min_FISCAL_MO" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="954" y="701.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="FISCAL_YR" action="GroupBy" rename="FISCAL_YR" />
+                <SummarizeField field="Min_FISCAL_MO" action="GroupBy" rename="Min_FISCAL_MO" />
+                <SummarizeField field="Customer_Type" action="GroupBy" rename="Customer_Type" />
+                <SummarizeField field="uniques" action="CountDistinctNonNull" rename="CountDistinctNonNull_uniques" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="43">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="1086" y="593.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="FISCAL_YR" />
+                <Field field="Customer_Type" />
+                <Field field="FISCAL_MO" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="FISCAL_YR" />
+                <Field field="Customer_Type" />
+                <Field field="Min_FISCAL_MO" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="True" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_FISCAL_YR" selected="True" />
+                    <SelectField field="Left_FISCAL_QTR" selected="True" />
+                    <SelectField field="Left_FISCAL_MO" selected="True" />
+                    <SelectField field="Left_Customer_Type" selected="True" />
+                    <SelectField field="Left_Customers" selected="True" rename="total" />
+                    <SelectField field="Right_CountDistinctNonNull_uniques" selected="True" rename="uniques" />
+                    <SelectField field="Right_FISCAL_YR" selected="True" rename="Right_FISCAL_YR" />
+                    <SelectField field="Right_Min_FISCAL_MO" selected="True" />
+                    <SelectField field="Right_Customer_Type" selected="True" rename="Right_Customer_Type" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="44">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1169.999" y="593.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">percentages2.csv</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>,</Delimeter>
+                <ForceQuotes>False</ForceQuotes>
+                <HeaderRow>True</HeaderRow>
+                <CodePage>28591</CodePage>
+                <WriteBOM>True</WriteBOM>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>percentages2.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="98">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="101" y="166" width="102.5343" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>spend</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="92">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="126" y="233.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\jj5jxt\Desktop\june\master31.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>master31.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="ORDER_DETAIL_KEY" size="10" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="ORDER_KEY" size="10" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="CHANNEL" size="1" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="MASTER_CHANNEL" size="1" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="PRICE_CD" size="2" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="STORE_NB" size="10" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.ORDERS4.txt" type="V_String" />
+                <Field name="SHIPPED_COST_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="SHIPPED_GROSS_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="SHIPPED_QTY" source="File: (Multiple Sources)" type="Int16" />
+                <Field name="ORDERED_QTY" source="File: (Multiple Sources)" type="Float" />
+                <Field name="RETURNED_QTY" source="File: (Multiple Sources)" type="Float" />
+                <Field name="RETURN_DATE" source="Formula: DateTimeParse([_CurrentField_], '%m/%d/%Y')" type="Date" />
+                <Field name="RETURNED_SOLD_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="RETURNED_GROSS_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="RETURNED_COST_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="ORDERED_SOLD_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="ORDERED_GROSS_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="ORDERED_COST_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="EXCLUDE_IND" size="1" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="SHIPPED_SOLD_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="ALIAS" size="12" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="SKU_CD" size="15" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="ITEM_NB" size="20" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="COLOR_CD" size="3" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="DAY_OF_THE_WK" size="9" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="FISCAL_DAY_OF_THE_YR" source="File: (Multiple Sources)" type="Int64" />
+                <Field name="FISCAL_WK" source="(Multiple Sources)" type="Byte" />
+                <Field name="FISCAL_MO" source="(Multiple Sources)" type="Byte" />
+                <Field name="FISCAL_QTR" source="(Multiple Sources)" type="Byte" />
+                <Field name="FISCAL_YR" source="(Multiple Sources)" type="Int16" />
+                <Field name="PAY_TYPE_CD" size="5" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="CUSTOMER_NB" size="16" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="ORDER_DATE" source="Formula: DateTimeParse([_CurrentField_], '%m/%d/%Y')" type="Date" />
+                <Field name="ORDER_TIME" source="File: (Multiple Sources)" type="Time" />
+                <Field name="SIZE_CD" size="18" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="FABRIC_CATEGORY_DESC" size="200" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="DESCRIPTION" size="50" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="EXTENDED_SIZE_DESC" size="200" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="COLOR_FAMILY_DESC" size="200" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="END_USE_DESC" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="STYLETYPEDESC" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="BODY_NB" size="30" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="ORIGINAL_RETAIL_PRICE_AMT" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="Float" />
+                <Field name="CLASS_NAME" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="DEPARTMENT_NAME" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="BIRTH_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="CLOSEST_STORE1_DIST" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="FIRST_CATALOG_ORDER_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="FIRST_ORDER_CHANNEL" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="FIRST_RETAIL_ORDER_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="FIRST_WEB_ORDER_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="IS_CALLABLE_IND" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="IS_EMAILABLE_IND" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="IS_JJCH_IND" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="JJCH_CLOSE_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="JJCH_OPEN_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="STATE" size="2" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="ZIP" size="7" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="GENDER" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="HIGH_RETURNER_IND" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="LAST_ORDER_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="ILINK" size="10" source="(Multiple Sources)" type="V_String" />
+                <Field description="Formula: if isnull([FIRST_ORDER_DATE])&#xA;then [Row-1:FIRST_ORDER_DATE] &#xA;else [FIRST_ORDER_DATE] endif" name="FIRST_ORDER_DATE" source="Formula: if isnull([FIRST_ORDER_DATE])&#xA;then [Row-1:FIRST_ORDER_DATE] &#xA;else [FIRST_ORDER_DATE] endif" type="Date" />
+                <Field name="fiscal_half" source="(Multiple Sources)" type="Int64" />
+                <Field name="recency_week" source="Formula: IF [Max_Days_Lapsed]&gt;365 THEN 2&#xA;ELSEIF [Min_Days_Lapsed]=0 THEN 0&#xA;ELSEIF [Max_Days_Lapsed]&gt;0 THEN 1&#xA;ELSE Null()&#xA;ENDIF" type="Byte" />
+                <Field name="recency_qtr" source="Formula: IF [Max_Days_Lapsed]&gt;365 THEN 2&#xA;ELSEIF [Min_Days_Lapsed]=0 THEN 0&#xA;ELSEIF [Max_Days_Lapsed]&gt;0 THEN 1&#xA;ELSE Null()&#xA;ENDIF" type="Byte" />
+                <Field name="recency_yr" source="Formula: IF [Max_Days_Lapsed]&gt;365 THEN 2&#xA;ELSEIF [Min_Days_Lapsed]=0 THEN 0&#xA;ELSEIF [Max_Days_Lapsed]&gt;0 THEN 1&#xA;ELSE Null()&#xA;ENDIF" type="Byte" />
+                <Field name="recency_half" source="Formula: IF [Max_Days_Lapsed]&gt;365 THEN 2 &#xA;ELSEIF [Min_Days_Lapsed]=0 THEN 0&#xA;ELSEIF [Max_Days_Lapsed]&gt;0 THEN 1&#xA;ELSE Null()&#xA;ENDIF" type="Byte" />
+                <Field name="recency_month" source="Formula: IF [Max_Days_Lapsed]&gt;365 THEN 2&#xA;ELSEIF [Min_Days_Lapsed]=0 THEN 0&#xA;ELSEIF [Max_Days_Lapsed]&gt;0 THEN 1&#xA;ELSE Null()&#xA;ENDIF" type="Byte" />
+                <Field description="Formula: if [ilink_day] &gt; 1 then [Row-1:ORDER_DATE] else [PRIOR_ORDER_DATE] endif" name="PRIOR_ORDER_DATE" source="Formula: if [ilink_day] &gt; 1 then [Row-1:ORDER_DATE] else [PRIOR_ORDER_DATE] endif" type="Date" />
+                <Field description="Formula: [Row-1:ilink_day]+1" name="ilink_day" source="Formula: [Row-1:ilink_day]+1" type="Int32" />
+                <Field description="Formula: DateTimeDiff([ORDER_DATE],[Row+1:ORDER_DATE],'days')" name="Min_days_lapsed" source="Formula: IF IsNull([Days_Lapsed]) and IsNull([FIRST_ORDER_DATE])&#xA; THEN 0&#xA;ELSEIF IsNull([days_lapsed]) and IsNull([PRIOR_ORDER_DATE])&#xA; THEN DateTimeDiff([ORDER_DATE],[FIRST_ORDER_DATE],&quot;days&quot;)&#xA;ELSEIF IsNull([days_lapsed]) and !IsNull([PRIOR_ORDER_DATE])&#xA; THEN DateTimeDiff([ORDER_DATE],[PRIOR_ORDER_DATE],&quot;days&quot;)&#xA; ELSE [Days_Lapsed] &#xA;ENDIF" type="Int32" />
+                <Field description="Formula: DateTimeDiff([ORDER_DATE],[Row+1:ORDER_DATE],'days')" name="Max_days_lapsed" source="Formula: IF IsNull([Days_Lapsed]) and IsNull([FIRST_ORDER_DATE])&#xA; THEN 0&#xA;ELSEIF IsNull([days_lapsed]) and IsNull([PRIOR_ORDER_DATE])&#xA; THEN DateTimeDiff([ORDER_DATE],[FIRST_ORDER_DATE],&quot;days&quot;)&#xA;ELSEIF IsNull([days_lapsed]) and !IsNull([PRIOR_ORDER_DATE])&#xA; THEN DateTimeDiff([ORDER_DATE],[PRIOR_ORDER_DATE],&quot;days&quot;)&#xA; ELSE [Days_Lapsed] &#xA;ENDIF" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="93">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="318" y="234" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="ORDERED_SOLD_AMT" selected="True" />
+                <SelectField field="FISCAL_YR" selected="True" />
+                <SelectField field="ILINK" selected="True" />
+                <SelectField field="recency_yr" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="94">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="414" y="222" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="ORDERED_SOLD_AMT" action="Sum" rename="annual_spend" />
+                <SummarizeField field="recency_yr" action="GroupBy" rename="recency_yr" />
+                <SummarizeField field="FISCAL_YR" action="GroupBy" rename="FISCAL_YR" />
+                <SummarizeField field="ILINK" action="GroupBy" rename="ILINK" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="96">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="510" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">annual_spend.txt</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>|</Delimeter>
+                <ForceQuotes>False</ForceQuotes>
+                <HeaderRow>True</HeaderRow>
+                <CodePage>28591</CodePage>
+                <WriteBOM>True</WriteBOM>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>annual_spend.txt</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="97">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="222" y="234" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[FISCAL_MO] &lt;= 7</Expression>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>&lt;=</Operator>
+                <Field>FISCAL_MO</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2018-09-11 16:08:41</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <StartDate>2018-09-11 16:08:41</StartDate>
+                  <EndDate>2018-09-11 16:08:41</EndDate>
+                  <Operand>7</Operand>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[FISCAL_MO] &lt;= 7</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="53.99998" y="54.00002" width="136.4582" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 25</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="78.99999" y="98.00005" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\jj5jxt\Desktop\june\master30.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>master30.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="ORDER_DETAIL_KEY" size="10" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="ORDER_KEY" size="10" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="CHANNEL" size="1" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="MASTER_CHANNEL" size="1" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="PRICE_CD" size="2" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="SHIPPED_COST_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="SHIPPED_GROSS_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="SHIPPED_QTY" source="File: (Multiple Sources)" type="Int16" />
+                <Field name="ORDERED_QTY" source="File: (Multiple Sources)" type="Float" />
+                <Field name="RETURNED_QTY" source="File: (Multiple Sources)" type="Float" />
+                <Field name="RETURN_DATE" source="Formula: DateTimeParse([_CurrentField_], '%m/%d/%Y')" type="Date" />
+                <Field name="RETURNED_SOLD_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="RETURNED_GROSS_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="RETURNED_COST_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="ORDERED_SOLD_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="ORDERED_GROSS_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="ORDERED_COST_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="EXCLUDE_IND" size="1" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="SHIPPED_SOLD_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="ALIAS" size="12" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="SKU_CD" size="15" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="ITEM_NB" size="20" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="COLOR_CD" size="3" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="DAY_OF_THE_WK" size="9" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="FISCAL_DAY_OF_THE_YR" source="File: (Multiple Sources)" type="Int64" />
+                <Field name="FISCAL_WK" source="(Multiple Sources)" type="Byte" />
+                <Field name="FISCAL_MO" source="(Multiple Sources)" type="Byte" />
+                <Field name="FISCAL_QTR" source="(Multiple Sources)" type="Byte" />
+                <Field name="FISCAL_YR" source="(Multiple Sources)" type="Int16" />
+                <Field name="PAY_TYPE_CD" size="5" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="CUSTOMER_NB" size="16" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="ORDER_DATE" source="Formula: DateTimeParse([_CurrentField_], '%m/%d/%Y')" type="Date" />
+                <Field name="ORDER_TIME" source="File: (Multiple Sources)" type="Time" />
+                <Field name="SIZE_CD" size="18" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="FABRIC_CATEGORY_DESC" size="200" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="DESCRIPTION" size="50" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="EXTENDED_SIZE_DESC" size="200" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="COLOR_FAMILY_DESC" size="200" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="END_USE_DESC" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="STYLETYPEDESC" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="BODY_NB" size="30" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="ORIGINAL_RETAIL_PRICE_AMT" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="Float" />
+                <Field name="CLASS_NAME" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="DEPARTMENT_NAME" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="BIRTH_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="CLOSEST_STORE1_DIST" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="FIRST_CATALOG_ORDER_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="FIRST_ORDER_CHANNEL" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="FIRST_RETAIL_ORDER_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="FIRST_WEB_ORDER_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="IS_CALLABLE_IND" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="IS_EMAILABLE_IND" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="IS_JJCH_IND" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="JJCH_CLOSE_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="JJCH_OPEN_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="STATE" size="2" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="ZIP" size="7" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="GENDER" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="HIGH_RETURNER_IND" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="LAST_ORDER_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="ILINK" size="10" source="(Multiple Sources)" type="V_String" />
+                <Field description="Formula: if isnull([FIRST_ORDER_DATE])&#xA;then [Row-1:FIRST_ORDER_DATE] &#xA;else [FIRST_ORDER_DATE] endif" name="FIRST_ORDER_DATE" source="Formula: if isnull([FIRST_ORDER_DATE])&#xA;then [Row-1:FIRST_ORDER_DATE] &#xA;else [FIRST_ORDER_DATE] endif" type="Date" />
+                <Field name="fiscal_half" source="(Multiple Sources)" type="Int64" />
+                <Field name="recency_week" source="Formula: IF [Max_Days_Lapsed]&gt;365 THEN 2&#xA;ELSEIF [Min_Days_Lapsed]=0 THEN 0&#xA;ELSEIF [Max_Days_Lapsed]&gt;0 THEN 1&#xA;ELSE Null()&#xA;ENDIF" type="Byte" />
+                <Field name="recency_qtr" source="Formula: IF [Max_Days_Lapsed]&gt;365 THEN 2&#xA;ELSEIF [Min_Days_Lapsed]=0 THEN 0&#xA;ELSEIF [Max_Days_Lapsed]&gt;0 THEN 1&#xA;ELSE Null()&#xA;ENDIF" type="Byte" />
+                <Field name="recency_yr" source="Formula: IF [Max_Days_Lapsed]&gt;365 THEN 2&#xA;ELSEIF [Min_Days_Lapsed]=0 THEN 0&#xA;ELSEIF [Max_Days_Lapsed]&gt;0 THEN 1&#xA;ELSE Null()&#xA;ENDIF" type="Byte" />
+                <Field name="recency_half" source="Formula: IF [Max_Days_Lapsed]&gt;365 THEN 2 &#xA;ELSEIF [Min_Days_Lapsed]=0 THEN 0&#xA;ELSEIF [Max_Days_Lapsed]&gt;0 THEN 1&#xA;ELSE Null()&#xA;ENDIF" type="Byte" />
+                <Field name="recency_month" source="Formula: IF [Max_Days_Lapsed]&gt;365 THEN 2&#xA;ELSEIF [Min_Days_Lapsed]=0 THEN 0&#xA;ELSEIF [Max_Days_Lapsed]&gt;0 THEN 1&#xA;ELSE Null()&#xA;ENDIF" type="Byte" />
+                <Field description="Formula: if [ilink_day] &gt; 1 then [Row-1:ORDER_DATE] else [PRIOR_ORDER_DATE] endif" name="PRIOR_ORDER_DATE" source="Formula: if [ilink_day] &gt; 1 then [Row-1:ORDER_DATE] else [PRIOR_ORDER_DATE] endif" type="Date" />
+                <Field description="Formula: [Row-1:ilink_day]+1" name="ilink_day" source="Formula: [Row-1:ilink_day]+1" type="Int32" />
+                <Field description="Formula: DateTimeDiff([ORDER_DATE],[Row+1:ORDER_DATE],'days')" name="Min_days_lapsed" source="Formula: IF IsNull([Days_Lapsed]) and IsNull([FIRST_ORDER_DATE])&#xA; THEN 0&#xA;ELSEIF IsNull([days_lapsed]) and IsNull([PRIOR_ORDER_DATE])&#xA; THEN DateTimeDiff([ORDER_DATE],[FIRST_ORDER_DATE],&quot;days&quot;)&#xA;ELSEIF IsNull([days_lapsed]) and !IsNull([PRIOR_ORDER_DATE])&#xA; THEN DateTimeDiff([ORDER_DATE],[PRIOR_ORDER_DATE],&quot;days&quot;)&#xA; ELSE [Days_Lapsed] &#xA;ENDIF" type="Int32" />
+                <Field description="Formula: DateTimeDiff([ORDER_DATE],[Row+1:ORDER_DATE],'days')" name="Max_days_lapsed" source="Formula: IF IsNull([Days_Lapsed]) and IsNull([FIRST_ORDER_DATE])&#xA; THEN 0&#xA;ELSEIF IsNull([days_lapsed]) and IsNull([PRIOR_ORDER_DATE])&#xA; THEN DateTimeDiff([ORDER_DATE],[FIRST_ORDER_DATE],&quot;days&quot;)&#xA;ELSEIF IsNull([days_lapsed]) and !IsNull([PRIOR_ORDER_DATE])&#xA; THEN DateTimeDiff([ORDER_DATE],[PRIOR_ORDER_DATE],&quot;days&quot;)&#xA; ELSE [Days_Lapsed] &#xA;ENDIF" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="271" y="109.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression><![CDATA[!IsNull([ILINK]) ]]></Expression>
+              <Mode>Custom</Mode>
+              <Simple>
+                <Operator>IsNotNull</Operator>
+                <Field>ILINK</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>False</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2018-08-07 13:02:37</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2018-08-07 13:02:37</StartDate>
+                  <EndDate>2018-08-07 13:02:37</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[!IsNull([ILINK]) ]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="463" y="110" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>!IsNull([recency_yr])</Expression>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>IsNotNull</Operator>
+                <Field>recency_yr</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>False</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2018-09-07 09:25:34</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <StartDate>2018-09-07 09:25:34</StartDate>
+                  <EndDate>2018-09-07 09:25:34</EndDate>
+                  <Operand>
+                  </Operand>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>!IsNull([recency_yr])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="367" y="110" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>!IsNull([FISCAL_QTR])</Expression>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>IsNotNull</Operator>
+                <Field>FISCAL_QTR</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2018-08-07 13:04:43</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2018-08-07 13:04:43</StartDate>
+                  <EndDate>2018-08-07 13:04:43</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>!IsNull([FISCAL_QTR])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="175.0001" y="109.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[FISCAL_YR] &gt;= 2014</Expression>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>&gt;=</Operator>
+                <Field>FISCAL_YR</Field>
+                <Operands>
+                  <PeriodDate>2018-08-07 13:05:33</PeriodDate>
+                  <PeriodType>days</PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <StartDate>2018-08-07 13:05:33</StartDate>
+                  <EndDate>2018-08-07 13:05:33</EndDate>
+                  <Operand>2014</Operand>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[FISCAL_YR] &gt;= 2014</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="607.0002" y="158" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="ILINK" action="GroupBy" rename="ILINK" />
+                <SummarizeField field="FISCAL_YR" action="GroupBy" rename="FISCAL_YR" />
+                <SummarizeField field="MASTER_CHANNEL" action="First" rename="Channel" />
+                <SummarizeField field="MASTER_CHANNEL" action="CountDistinctNonNull" rename="Channels" />
+                <SummarizeField field="recency_month" action="GroupBy" rename="Recency" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="703.0002" y="170" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [Channels]&gt;1 THEN &#xA;	'Omni' &#xA;ELSEIF [Channel]='D' THEN&#xA;	'Direct1' &#xA;ELSE&#xA;	'Retail1' &#xA;ENDIF" field="Channel" size="1" type="V_String" />
+                <FormulaField expression="If [Recency] = 0 then 'NTB_'+[Channel]&#xA;elseif [Recency] = 1 then 'Existing_'+[Channel]&#xA;ELSEIF [Recency] = 2 then 'React_'+[Channel]&#xA;else 'null'&#xA;endif" field="Customer_Type" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Channel = IF [Channels]&gt;1 THEN 
+	'Omni' 
+ELSEIF [Channel]='D' THEN
+	'Direct1' 
+E...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="799.0001" y="170" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File FileFormat="19" MaxRecords="">C:\Users\jj5jxt\Desktop\june\master_segment.yxdb</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <NoSpatialIndex>False</NoSpatialIndex>
+                <SaveSource>True</SaveSource>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>master_segment.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="617.9999" y="150" width="136.4582" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 14</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="644.0002" y="238.0002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\jj5jxt\Desktop\june\master30.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>master30.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="ORDER_DETAIL_KEY" size="10" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="ORDER_KEY" size="10" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="CHANNEL" size="1" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="MASTER_CHANNEL" size="1" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="PRICE_CD" size="2" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="SHIPPED_COST_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="SHIPPED_GROSS_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="SHIPPED_QTY" source="File: (Multiple Sources)" type="Int16" />
+                <Field name="ORDERED_QTY" source="File: (Multiple Sources)" type="Float" />
+                <Field name="RETURNED_QTY" source="File: (Multiple Sources)" type="Float" />
+                <Field name="RETURN_DATE" source="Formula: DateTimeParse([_CurrentField_], '%m/%d/%Y')" type="Date" />
+                <Field name="RETURNED_SOLD_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="RETURNED_GROSS_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="RETURNED_COST_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="ORDERED_SOLD_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="ORDERED_GROSS_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="ORDERED_COST_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="EXCLUDE_IND" size="1" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="SHIPPED_SOLD_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="ALIAS" size="12" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="SKU_CD" size="15" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="ITEM_NB" size="20" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="COLOR_CD" size="3" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="DAY_OF_THE_WK" size="9" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="FISCAL_DAY_OF_THE_YR" source="File: (Multiple Sources)" type="Int64" />
+                <Field name="FISCAL_WK" source="(Multiple Sources)" type="Byte" />
+                <Field name="FISCAL_MO" source="(Multiple Sources)" type="Byte" />
+                <Field name="FISCAL_QTR" source="(Multiple Sources)" type="Byte" />
+                <Field name="FISCAL_YR" source="(Multiple Sources)" type="Int16" />
+                <Field name="PAY_TYPE_CD" size="5" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="CUSTOMER_NB" size="16" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="ORDER_DATE" source="Formula: DateTimeParse([_CurrentField_], '%m/%d/%Y')" type="Date" />
+                <Field name="ORDER_TIME" source="File: (Multiple Sources)" type="Time" />
+                <Field name="SIZE_CD" size="18" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="FABRIC_CATEGORY_DESC" size="200" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="DESCRIPTION" size="50" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="EXTENDED_SIZE_DESC" size="200" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="COLOR_FAMILY_DESC" size="200" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="END_USE_DESC" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="STYLETYPEDESC" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="BODY_NB" size="30" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="ORIGINAL_RETAIL_PRICE_AMT" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="Float" />
+                <Field name="CLASS_NAME" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="DEPARTMENT_NAME" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="BIRTH_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="CLOSEST_STORE1_DIST" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="FIRST_CATALOG_ORDER_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="FIRST_ORDER_CHANNEL" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="FIRST_RETAIL_ORDER_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="FIRST_WEB_ORDER_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="IS_CALLABLE_IND" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="IS_EMAILABLE_IND" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="IS_JJCH_IND" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="JJCH_CLOSE_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="JJCH_OPEN_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="STATE" size="2" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="ZIP" size="7" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="GENDER" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="HIGH_RETURNER_IND" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="LAST_ORDER_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="ILINK" size="10" source="(Multiple Sources)" type="V_String" />
+                <Field description="Formula: if isnull([FIRST_ORDER_DATE])&#xA;then [Row-1:FIRST_ORDER_DATE] &#xA;else [FIRST_ORDER_DATE] endif" name="FIRST_ORDER_DATE" source="Formula: if isnull([FIRST_ORDER_DATE])&#xA;then [Row-1:FIRST_ORDER_DATE] &#xA;else [FIRST_ORDER_DATE] endif" type="Date" />
+                <Field name="fiscal_half" source="(Multiple Sources)" type="Int64" />
+                <Field name="recency_week" source="Formula: IF [Max_Days_Lapsed]&gt;365 THEN 2&#xA;ELSEIF [Min_Days_Lapsed]=0 THEN 0&#xA;ELSEIF [Max_Days_Lapsed]&gt;0 THEN 1&#xA;ELSE Null()&#xA;ENDIF" type="Byte" />
+                <Field name="recency_qtr" source="Formula: IF [Max_Days_Lapsed]&gt;365 THEN 2&#xA;ELSEIF [Min_Days_Lapsed]=0 THEN 0&#xA;ELSEIF [Max_Days_Lapsed]&gt;0 THEN 1&#xA;ELSE Null()&#xA;ENDIF" type="Byte" />
+                <Field name="recency_yr" source="Formula: IF [Max_Days_Lapsed]&gt;365 THEN 2&#xA;ELSEIF [Min_Days_Lapsed]=0 THEN 0&#xA;ELSEIF [Max_Days_Lapsed]&gt;0 THEN 1&#xA;ELSE Null()&#xA;ENDIF" type="Byte" />
+                <Field name="recency_half" source="Formula: IF [Max_Days_Lapsed]&gt;365 THEN 2 &#xA;ELSEIF [Min_Days_Lapsed]=0 THEN 0&#xA;ELSEIF [Max_Days_Lapsed]&gt;0 THEN 1&#xA;ELSE Null()&#xA;ENDIF" type="Byte" />
+                <Field name="recency_month" source="Formula: IF [Max_Days_Lapsed]&gt;365 THEN 2&#xA;ELSEIF [Min_Days_Lapsed]=0 THEN 0&#xA;ELSEIF [Max_Days_Lapsed]&gt;0 THEN 1&#xA;ELSE Null()&#xA;ENDIF" type="Byte" />
+                <Field description="Formula: if [ilink_day] &gt; 1 then [Row-1:ORDER_DATE] else [PRIOR_ORDER_DATE] endif" name="PRIOR_ORDER_DATE" source="Formula: if [ilink_day] &gt; 1 then [Row-1:ORDER_DATE] else [PRIOR_ORDER_DATE] endif" type="Date" />
+                <Field description="Formula: [Row-1:ilink_day]+1" name="ilink_day" source="Formula: [Row-1:ilink_day]+1" type="Int32" />
+                <Field description="Formula: DateTimeDiff([ORDER_DATE],[Row+1:ORDER_DATE],'days')" name="Min_days_lapsed" source="Formula: IF IsNull([Days_Lapsed]) and IsNull([FIRST_ORDER_DATE])&#xA; THEN 0&#xA;ELSEIF IsNull([days_lapsed]) and IsNull([PRIOR_ORDER_DATE])&#xA; THEN DateTimeDiff([ORDER_DATE],[FIRST_ORDER_DATE],&quot;days&quot;)&#xA;ELSEIF IsNull([days_lapsed]) and !IsNull([PRIOR_ORDER_DATE])&#xA; THEN DateTimeDiff([ORDER_DATE],[PRIOR_ORDER_DATE],&quot;days&quot;)&#xA; ELSE [Days_Lapsed] &#xA;ENDIF" type="Int32" />
+                <Field description="Formula: DateTimeDiff([ORDER_DATE],[Row+1:ORDER_DATE],'days')" name="Max_days_lapsed" source="Formula: IF IsNull([Days_Lapsed]) and IsNull([FIRST_ORDER_DATE])&#xA; THEN 0&#xA;ELSEIF IsNull([days_lapsed]) and IsNull([PRIOR_ORDER_DATE])&#xA; THEN DateTimeDiff([ORDER_DATE],[FIRST_ORDER_DATE],&quot;days&quot;)&#xA;ELSEIF IsNull([days_lapsed]) and !IsNull([PRIOR_ORDER_DATE])&#xA; THEN DateTimeDiff([ORDER_DATE],[PRIOR_ORDER_DATE],&quot;days&quot;)&#xA; ELSE [Days_Lapsed] &#xA;ENDIF" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1027" y="194" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="ILINK" action="GroupBy" rename="monthly_custs" />
+                <SummarizeField field="FISCAL_YR" action="GroupBy" rename="FISCAL_YR" />
+                <SummarizeField field="FISCAL_MO" action="Min" rename="Min_FISCAL_MO" />
+                <SummarizeField field="Customer_Type" action="GroupBy" rename="Customer_Type" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="931.0001" y="242" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>!IsNull([recency_yr])</Expression>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>IsNotNull</Operator>
+                <Field>recency_yr</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2018-09-05 12:43:39</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2018-09-05 12:43:39</StartDate>
+                  <EndDate>2018-09-05 12:43:39</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>!IsNull([recency_yr])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1328" y="262" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">C:\Users\jj5jxt\Desktop\july\pacing3.csv</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>,</Delimeter>
+                <ForceQuotes>False</ForceQuotes>
+                <HeaderRow>True</HeaderRow>
+                <CodePage>28591</CodePage>
+                <WriteBOM>True</WriteBOM>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>pacing3.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1123" y="194" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="FISCAL_YR" action="GroupBy" rename="FISCAL_YR" />
+                <SummarizeField field="Min_FISCAL_MO" action="GroupBy" rename="Min_FISCAL_MO" />
+                <SummarizeField field="monthly_custs" action="CountDistinctNonNull" rename="monthly_uniques" />
+                <SummarizeField field="Customer_Type" action="GroupBy" rename="Customer_Type" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1052" y="370" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="FISCAL_YR" action="GroupBy" rename="FISCAL_YR" />
+                <SummarizeField field="FISCAL_MO" action="GroupBy" rename="FISCAL_MO" />
+                <SummarizeField field="ILINK" action="CountDistinctNonNull" rename="total" />
+                <SummarizeField field="Customer_Type" action="GroupBy" rename="Customer_Type" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="1208" y="262" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="FISCAL_YR" />
+                <Field field="Min_FISCAL_MO" />
+                <Field field="Customer_Type" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="FISCAL_YR" />
+                <Field field="FISCAL_MO" />
+                <Field field="Customer_Type" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_FISCAL_YR" selected="True" />
+                    <SelectField field="Left_Min_FISCAL_MO" selected="True" />
+                    <SelectField field="Left_monthly_uniques" selected="True" />
+                    <SelectField field="Right_FISCAL_YR" selected="False" rename="Right_FISCAL_YR" />
+                    <SelectField field="Right_FISCAL_MO" selected="True" />
+                    <SelectField field="Right_total" selected="True" />
+                    <SelectField field="Right_Customer_Type" selected="True" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="642.9998" y="349.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\jj5jxt\Desktop\june\master_segment.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>master_segment.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="ILINK" size="10" source="Summarize: GroupBy - ILINK" type="V_String" />
+                <Field name="FISCAL_YR" source="Summarize: GroupBy - FISCAL_YR" type="Int16" />
+                <Field name="Channel" size="1" source="Formula: IF [Channels]&gt;1 THEN &#xA; 'Omni' &#xA;ELSEIF [Channel]='D' THEN&#xA; 'Direct1' &#xA;ELSE&#xA; 'Retail1' &#xA;ENDIF" type="V_String" />
+                <Field name="Channels" source="Summarize: CountDistinctNonNull - MASTER_CHANNEL" type="Int64" />
+                <Field name="Recency" source="Summarize: GroupBy - recency_month" type="Byte" />
+                <Field name="Customer_Type" size="1073741823" source="Formula: If [Recency] = 0 then 'NTB_'+[Channel]&#xA;elseif [Recency] = 1 then 'Existing_'+[Channel]&#xA;ELSEIF [Recency] = 2 then 'React_'+[Channel]&#xA;else 'null'&#xA;endif" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="835.0002" y="302" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="ILINK" />
+                <Field field="FISCAL_YR" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="ILINK" />
+                <Field field="FISCAL_YR" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_FISCAL_MO" selected="True" />
+                    <SelectField field="Left_FISCAL_QTR" selected="True" />
+                    <SelectField field="Left_FISCAL_YR" selected="True" />
+                    <SelectField field="Left_ILINK" selected="True" />
+                    <SelectField field="Left_recency_yr" selected="True" />
+                    <SelectField field="Right_ILINK" selected="False" rename="Right_ILINK" />
+                    <SelectField field="Right_FISCAL_YR" selected="False" rename="Right_FISCAL_YR" />
+                    <SelectField field="Right_Channel" selected="False" rename="Right_Channel" />
+                    <SelectField field="Right_Customer_Type" selected="True" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="26">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="739.0002" y="337.9997" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>!IsNull([Recency])</Expression>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>IsNotNull</Operator>
+                <Field>Recency</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2018-09-07 10:38:50</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <StartDate>2018-09-07 10:38:50</StartDate>
+                  <EndDate>2018-09-07 10:38:50</EndDate>
+                  <Operand>
+                  </Operand>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>!IsNull([Recency])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="61">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="378" y="390" width="1331" height="1054" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Shiny Workflow</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="46">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="403.0001" y="646.0002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\jj5jxt\Desktop\june\master15k.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>master15k.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="ORDER_DETAIL_KEY" size="10" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="ORDER_KEY" size="10" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="CHANNEL" size="1" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="MASTER_CHANNEL" size="1" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="PRICE_CD" size="2" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="SHIPPED_COST_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="STORE_NB" size="254" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="SHIPPED_GROSS_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="SHIPPED_QTY" source="File: (Multiple Sources)" type="Int16" />
+                <Field name="ORDERED_QTY" source="File: (Multiple Sources)" type="Float" />
+                <Field name="RETURNED_QTY" source="File: (Multiple Sources)" type="Float" />
+                <Field name="RETURNED_SOLD_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="RETURNED_GROSS_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="RETURNED_COST_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="ORDERED_SOLD_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="ORDERED_GROSS_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="ORDERED_COST_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="EXCLUDE_IND" size="1" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="SHIPPED_SOLD_AMT" source="File: (Multiple Sources)" type="Float" />
+                <Field name="ALIAS" size="12" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="SKU_CD" size="15" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="ITEM_NB" size="20" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="COLOR_CD" size="3" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="DAY_OF_THE_WK" size="9" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="FISCAL_DAY_OF_THE_YR" source="File: (Multiple Sources)" type="Int64" />
+                <Field name="FISCAL_WK" source="(Multiple Sources)" type="Byte" />
+                <Field name="FISCAL_MO" source="(Multiple Sources)" type="Byte" />
+                <Field name="FISCAL_QTR" source="(Multiple Sources)" type="Byte" />
+                <Field name="FISCAL_YR" source="(Multiple Sources)" type="Int16" />
+                <Field name="PAY_TYPE_CD" size="5" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="CUSTOMER_NB" size="16" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="ORDER_DATE" source="Formula: DateTimeParse([_CurrentField_], '%m/%d/%Y')" type="Date" />
+                <Field name="ORDER_TIME" source="File: (Multiple Sources)" type="Time" />
+                <Field name="STORE_NAME" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.ORDERS4.txt" type="V_String" />
+                <Field name="DISTRICT_ID" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.ORDERS4.txt" type="V_String" />
+                <Field name="DISTRICT_NAME" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.ORDERS4.txt" type="V_String" />
+                <Field name="REGION_ID" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.ORDERS4.txt" type="V_String" />
+                <Field name="REGION_NAME" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.ORDERS4.txt" type="V_String" />
+                <Field name="STORE_ID" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.ORDERS4.txt" type="V_String" />
+                <Field name="RETURN_DATE" source="Formula: DateTimeParse([_CurrentField_], '%m/%d/%Y')" type="Date" />
+                <Field name="SIZE_CD" size="18" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="FABRIC_CATEGORY_DESC" size="200" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="DESCRIPTION" size="50" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="EXTENDED_SIZE_DESC" size="200" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="COLOR_FAMILY_DESC" size="200" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="END_USE_DESC" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="STYLETYPEDESC" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="BODY_NB" size="30" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="ORIGINAL_RETAIL_PRICE_AMT" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="Float" />
+                <Field name="CLASS_NAME" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="DEPARTMENT_NAME" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.DETAILS2.txt" type="V_String" />
+                <Field name="BIRTH_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="CLOSEST_STORE1_DIST" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="FIRST_CATALOG_ORDER_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="FIRST_ORDER_CHANNEL" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="FIRST_RETAIL_ORDER_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="FIRST_WEB_ORDER_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="IS_CALLABLE_IND" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="IS_EMAILABLE_IND" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="IS_JJCH_IND" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="JJCH_CLOSE_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="JJCH_OPEN_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="STATE" size="2" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="ZIP" size="7" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="GENDER" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="HIGH_RETURNER_IND" size="1" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="LAST_ORDER_DATE" source="Formula: DateTimeParse([_CurrentField_], &quot;%m/%d/%Y&quot;)" type="Date" />
+                <Field name="EMAIL_ADDRESS" size="254" source="File: C:\Users\jj5jxt\Desktop\june\JTHOMPSON.MAPPING.txt" type="V_String" />
+                <Field name="ILINK" size="10" source="(Multiple Sources)" type="V_String" />
+                <Field description="Formula: if isnull([FIRST_ORDER_DATE])&#xA;then [Row-1:FIRST_ORDER_DATE] &#xA;else [FIRST_ORDER_DATE] endif" name="FIRST_ORDER_DATE" source="Formula: if isnull([FIRST_ORDER_DATE])&#xA;then [Row-1:FIRST_ORDER_DATE] &#xA;else [FIRST_ORDER_DATE] endif" type="Date" />
+                <Field name="fiscal_half" source="(Multiple Sources)" type="Int64" />
+                <Field name="recency_week" source="Formula: IF [Max_Days_Lapsed]&gt;365 THEN 2&#xA;ELSEIF [Min_Days_Lapsed]=0 THEN 0&#xA;ELSEIF [Max_Days_Lapsed]&gt;0 THEN 1&#xA;ELSE Null()&#xA;ENDIF" type="Byte" />
+                <Field name="recency_qtr" source="Formula: IF [Max_Days_Lapsed]&gt;365 THEN 2&#xA;ELSEIF [Min_Days_Lapsed]=0 THEN 0&#xA;ELSEIF [Max_Days_Lapsed]&gt;0 THEN 1&#xA;ELSE Null()&#xA;ENDIF" type="Byte" />
+                <Field name="recency_yr" source="Formula: IF [Max_Days_Lapsed]&gt;365 THEN 2&#xA;ELSEIF [Min_Days_Lapsed]=0 THEN 0&#xA;ELSEIF [Max_Days_Lapsed]&gt;0 THEN 1&#xA;ELSE Null()&#xA;ENDIF" type="Byte" />
+                <Field name="recency_half" source="Formula: IF [Max_Days_Lapsed]&gt;365 THEN 2 &#xA;ELSEIF [Min_Days_Lapsed]=0 THEN 0&#xA;ELSEIF [Max_Days_Lapsed]&gt;0 THEN 1&#xA;ELSE Null()&#xA;ENDIF" type="Byte" />
+                <Field name="recency_month" source="Formula: IF [Max_Days_Lapsed]&gt;365 THEN 2&#xA;ELSEIF [Min_Days_Lapsed]=0 THEN 0&#xA;ELSEIF [Max_Days_Lapsed]&gt;0 THEN 1&#xA;ELSE Null()&#xA;ENDIF" type="Byte" />
+                <Field description="Formula: if [ilink_day] &gt; 1 then [Row-1:ORDER_DATE] else [PRIOR_ORDER_DATE] endif" name="PRIOR_ORDER_DATE" source="Formula: if [ilink_day] &gt; 1 then [Row-1:ORDER_DATE] else [PRIOR_ORDER_DATE] endif" type="Date" />
+                <Field description="Formula: [Row-1:ilink_day]+1" name="ilink_day" source="Formula: [Row-1:ilink_day]+1" type="Int32" />
+                <Field description="Formula: DateTimeDiff([ORDER_DATE],[Row+1:ORDER_DATE],'days')" name="Min_days_lapsed" source="Formula: IF IsNull([Days_Lapsed]) and IsNull([FIRST_ORDER_DATE])&#xA; THEN 0&#xA;ELSEIF IsNull([days_lapsed]) and IsNull([PRIOR_ORDER_DATE])&#xA; THEN DateTimeDiff([ORDER_DATE],[FIRST_ORDER_DATE],&quot;days&quot;)&#xA;ELSEIF IsNull([days_lapsed]) and !IsNull([PRIOR_ORDER_DATE])&#xA; THEN DateTimeDiff([ORDER_DATE],[PRIOR_ORDER_DATE],&quot;days&quot;)&#xA; ELSE [Days_Lapsed] &#xA;ENDIF" type="Int32" />
+                <Field description="Formula: DateTimeDiff([ORDER_DATE],[Row+1:ORDER_DATE],'days')" name="Max_days_lapsed" source="Formula: IF IsNull([Days_Lapsed]) and IsNull([FIRST_ORDER_DATE])&#xA; THEN 0&#xA;ELSEIF IsNull([days_lapsed]) and IsNull([PRIOR_ORDER_DATE])&#xA; THEN DateTimeDiff([ORDER_DATE],[FIRST_ORDER_DATE],&quot;days&quot;)&#xA;ELSEIF IsNull([days_lapsed]) and !IsNull([PRIOR_ORDER_DATE])&#xA; THEN DateTimeDiff([ORDER_DATE],[PRIOR_ORDER_DATE],&quot;days&quot;)&#xA; ELSE [Days_Lapsed] &#xA;ENDIF" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="47">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="967" y="646.0002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="ILINK" action="GroupBy" rename="ILINK" />
+                <SummarizeField field="FISCAL_YR" action="GroupBy" rename="FISCAL_YR" />
+                <SummarizeField field="MASTER_CHANNEL" action="First" rename="Channel" />
+                <SummarizeField field="MASTER_CHANNEL" action="CountDistinctNonNull" rename="Channels" />
+                <SummarizeField field="recency_yr" action="First" rename="Recency" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="48">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="679.0001" y="646.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression><![CDATA[!IsNull([ILINK]) ]]></Expression>
+              <Mode>Custom</Mode>
+              <Simple>
+                <Operator>IsNotNull</Operator>
+                <Field>ILINK</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>False</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2018-08-07 13:02:37</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2018-08-07 13:02:37</StartDate>
+                  <EndDate>2018-08-07 13:02:37</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[!IsNull([ILINK]) ]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="49">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1063" y="646.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [Channels]&gt;1 THEN &#xA;	'Omni' &#xA;ELSEIF [Channel]='D' THEN&#xA;	'Direct1' &#xA;ELSE&#xA;	'Retail1' &#xA;ENDIF" field="Channel" size="20" type="V_String" />
+                <FormulaField expression="If [Recency] = 0 then 'NTB_'+[Channel]&#xA;elseif [Recency] = 1 then 'Existing_'+[Channel]&#xA;ELSE 'React_'+[Channel]&#xA;endif" field="Customer_Type" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Channel = IF [Channels]&gt;1 THEN 
+	'Omni' 
+ELSEIF [Channel]='D' THEN
+	'Direct1' 
+E...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="50">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="487.0002" y="646.0002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="ORDER_KEY" selected="True" />
+                <SelectField field="CHANNEL" selected="True" />
+                <SelectField field="MASTER_CHANNEL" selected="True" size="20" />
+                <SelectField field="SHIPPED_COST_AMT" selected="True" />
+                <SelectField field="SHIPPED_GROSS_AMT" selected="True" />
+                <SelectField field="SHIPPED_QTY" selected="True" />
+                <SelectField field="ORDERED_QTY" selected="True" />
+                <SelectField field="ORDERED_SOLD_AMT" selected="True" />
+                <SelectField field="ORDERED_GROSS_AMT" selected="True" />
+                <SelectField field="ORDERED_COST_AMT" selected="True" />
+                <SelectField field="EXCLUDE_IND" selected="True" />
+                <SelectField field="SHIPPED_SOLD_AMT" selected="True" />
+                <SelectField field="FISCAL_WK" selected="True" />
+                <SelectField field="FISCAL_MO" selected="True" />
+                <SelectField field="FISCAL_QTR" selected="True" />
+                <SelectField field="FISCAL_YR" selected="True" />
+                <SelectField field="ORDER_DATE" selected="True" />
+                <SelectField field="ILINK" selected="True" />
+                <SelectField field="recency_week" selected="True" />
+                <SelectField field="recency_qtr" selected="True" />
+                <SelectField field="recency_yr" selected="True" />
+                <SelectField field="recency_month" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="51">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1159" y="646.0002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="FISCAL_YR" action="GroupBy" rename="FISCAL_YR" />
+                <SummarizeField field="Customer_Type" action="GroupBy" rename="Customer_Type" />
+                <SummarizeField field="ILINK" action="CountDistinct" rename="Customers" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="52">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="871" y="646.0002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>!IsNull([recency_yr]) and !IsNull([recency_month])</Expression>
+              <Mode>Custom</Mode>
+              <Simple>
+                <Operator>IsNotNull</Operator>
+                <Field>recency_yr</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>False</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2018-09-07 11:57:15</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2018-09-07 11:57:15</StartDate>
+                  <EndDate>2018-09-07 11:57:15</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>!IsNull([recency_yr]) and !IsNull([recency_month])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="53">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="775" y="646.0003" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>!IsNull([FISCAL_QTR]) and [ORDERED_QTY] &gt; 0 and [EXCLUDE_IND] = 'N'</Expression>
+              <Mode>Custom</Mode>
+              <Simple>
+                <Operator>IsNotNull</Operator>
+                <Field>FISCAL_QTR</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2018-08-07 13:04:43</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2018-08-07 13:04:43</StartDate>
+                  <EndDate>2018-08-07 13:04:43</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>!IsNull([FISCAL_QTR]) and [ORDERED_QTY] &gt; 0 and [EXCLUDE_IND] = 'N'</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="54">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="582.9998" y="646.0002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[FISCAL_YR] = 2018</Expression>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>FISCAL_YR</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2018-09-07 15:23:24</PeriodDate>
+                  <PeriodType>days</PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>2018</Operand>
+                  <StartDate>2018-09-07 15:23:24</StartDate>
+                  <EndDate>2018-09-07 15:23:24</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[FISCAL_YR] = 2018</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="55">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="979.0001" y="826.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="ILINK" action="GroupBy" rename="ILINK" />
+                <SummarizeField field="FISCAL_YR" action="GroupBy" rename="FISCAL_YR" />
+                <SummarizeField field="FISCAL_MO" action="Min" rename="Min_FISCAL_MO" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="57">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1134" y="829.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="FISCAL_YR" action="GroupBy" rename="FISCAL_YR" />
+                <SummarizeField field="ILINK" action="CountDistinctNonNull" rename="uniques" />
+                <SummarizeField field="Min_FISCAL_MO" action="GroupBy" rename="Min_FISCAL_MO" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="62">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="954" y="914.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="ILINK" action="GroupBy" rename="ILINK" />
+                <SummarizeField field="FISCAL_YR" action="GroupBy" rename="FISCAL_YR" />
+                <SummarizeField field="MASTER_CHANNEL" action="First" rename="Channel" />
+                <SummarizeField field="MASTER_CHANNEL" action="CountDistinctNonNull" rename="Channels" />
+                <SummarizeField field="recency_yr" action="First" rename="Recency" />
+                <SummarizeField field="FISCAL_MO" action="Min" rename="Min_FISCAL_MO" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="63">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1050" y="914" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [Channels]&gt;1 THEN &#xA;	'Omni' &#xA;ELSEIF [Channel]='D' THEN&#xA;	'Direct1' &#xA;ELSE&#xA;	'Retail1' &#xA;ENDIF" field="Channel" size="20" type="V_String" />
+                <FormulaField expression="If [Recency] = 0 then 'NTB_'+[Channel]&#xA;elseif [Recency] = 1 then 'Existing_'+[Channel]&#xA;ELSE 'React_'+[Channel]&#xA;endif" field="Customer_Type" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Channel = IF [Channels]&gt;1 THEN 
+	'Omni' 
+ELSEIF [Channel]='D' THEN
+	'Direct1' 
+E...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="64">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1146" y="914" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="FISCAL_YR" action="GroupBy" rename="FISCAL_YR" />
+                <SummarizeField field="Min_FISCAL_MO" action="GroupBy" rename="Min_FISCAL_MO" />
+                <SummarizeField field="Customer_Type" action="GroupBy" rename="Customer_Type" />
+                <SummarizeField field="ILINK" action="CountDistinct" rename="Customers" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="65">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="965.9996" y="1118" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="FISCAL_YR" action="GroupBy" rename="FISCAL_YR" />
+                <SummarizeField field="FISCAL_MO" action="GroupBy" rename="FISCAL_MO" />
+                <SummarizeField field="ILINK" action="CountDistinctNonNull" rename="CountDistinctNonNull_ILINK" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="66">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="953.9999" y="1250" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="ILINK" action="GroupBy" rename="Customers" />
+                <SummarizeField field="FISCAL_YR" action="GroupBy" rename="FISCAL_YR" />
+                <SummarizeField field="MASTER_CHANNEL" action="First" rename="Channel" />
+                <SummarizeField field="MASTER_CHANNEL" action="CountDistinct" rename="Channels" />
+                <SummarizeField field="FISCAL_MO" action="GroupBy" rename="FISCAL_MO" />
+                <SummarizeField field="recency_month" action="First" rename="Recency" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="67">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1038" y="1238" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [Channels]&gt;1 THEN &#xA;	'Omni' &#xA;ELSEIF [Channel]='D' THEN&#xA;	'Direct1' &#xA;ELSE&#xA;	'Retail1' &#xA;ENDIF" field="Channel" size="20" type="V_String" />
+                <FormulaField expression="If [Recency] = 0 then 'NTB_'+[Channel]&#xA;elseif [Recency] = 1 then 'Existing_'+[Channel]&#xA;ELSE 'React_'+[Channel]&#xA;endif" field="Customer_Type" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Channel = IF [Channels]&gt;1 THEN 
+	'Omni' 
+ELSEIF [Channel]='D' THEN
+	'Direct1' 
+E...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="68">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1134" y="1250" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="FISCAL_YR" action="GroupBy" rename="FISCAL_YR" />
+                <SummarizeField field="FISCAL_MO" action="GroupBy" rename="FISCAL_MO" />
+                <SummarizeField field="Customer_Type" action="GroupBy" rename="Customer_Type" />
+                <SummarizeField field="Customers" action="CountDistinctNonNull" rename="Customers" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="69">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="954" y="541.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="FISCAL_YR" action="GroupBy" rename="FISCAL_YR" />
+                <SummarizeField field="ILINK" action="GroupBy" rename="ILINK" />
+                <SummarizeField field="recency_qtr" action="First" rename="Recency" />
+                <SummarizeField field="MASTER_CHANNEL" action="First" rename="Channel" />
+                <SummarizeField field="MASTER_CHANNEL" action="CountDistinct" rename="Channels" />
+                <SummarizeField field="FISCAL_QTR" action="Min" rename="Min_FISCAL_QTR" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="71">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1194" y="545.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="FISCAL_YR" action="GroupBy" rename="FISCAL_YR" />
+                <SummarizeField field="Min_FISCAL_QTR" action="GroupBy" rename="Min_FISCAL_QTR" />
+                <SummarizeField field="Customer_Type" action="GroupBy" rename="Customer_Type" />
+                <SummarizeField field="ILINK" action="CountDistinctNonNull" rename="Quarter_Number" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="72">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1242" y="649.9999" width="120" height="60" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text><![CDATA[yearly breakdown of customers by yearly segment
+]]></Text>
+              <Font name="Segoe UI" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="73">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1254" y="818.0001" width="100" height="72" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text><![CDATA[monthly breakdown of yearly unique customers
+]]></Text>
+              <Font name="Segoe UI" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="74">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1254" y="926" width="112" height="72" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>monthly breakdown of customers by yearly segment</Text>
+              <Font name="Segoe UI" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="75">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1254" y="1118" width="100" height="72" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text><![CDATA[monthly breakdown of monthly unique customers
+]]></Text>
+              <Font name="Segoe UI" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="76">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1242" y="1262" width="112" height="84" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text><![CDATA[monthly breakdown of monthly unique customers by monthly segment
+
+]]></Text>
+              <Font name="Segoe UI" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="77">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1050" y="541.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [Channels]&gt;1 THEN &#xA;	'Omni' &#xA;ELSEIF [Channel]='D' THEN&#xA;	'Direct1' &#xA;ELSE&#xA;	'Retail1' &#xA;ENDIF" field="Channel" size="20" type="V_String" />
+                <FormulaField expression="If [Recency] = 0 then 'NTB_'+[Channel]&#xA;elseif [Recency] = 1 then 'Existing_'+[Channel]&#xA;ELSE 'React_'+[Channel]&#xA;endif" field="Customer_Type" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Channel = IF [Channels]&gt;1 THEN 
+	'Omni' 
+ELSEIF [Channel]='D' THEN
+	'Direct1' 
+E...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="78">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="978" y="434" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="FISCAL_YR" action="GroupBy" rename="FISCAL_YR" />
+                <SummarizeField field="ILINK" action="GroupBy" rename="ILINK" />
+                <SummarizeField field="FISCAL_QTR" action="GroupBy" rename="FISCAL_QTR" />
+                <SummarizeField field="recency_qtr" action="First" rename="Recency" />
+                <SummarizeField field="MASTER_CHANNEL" action="First" rename="Channel" />
+                <SummarizeField field="MASTER_CHANNEL" action="CountDistinct" rename="Channels" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="79">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1206" y="434" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="FISCAL_YR" action="GroupBy" rename="FISCAL_YR" />
+                <SummarizeField field="FISCAL_QTR" action="GroupBy" rename="FISCAL_QTR" />
+                <SummarizeField field="Customer_Type" action="GroupBy" rename="Customer_Type" />
+                <SummarizeField field="ILINK" action="CountDistinctNonNull" rename="Customers" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="80">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1074" y="434" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [Channels]&gt;1 THEN &#xA;	'Omni' &#xA;ELSEIF [Channel]='D' THEN&#xA;	'Direct1' &#xA;ELSE&#xA;	'Retail1' &#xA;ENDIF" field="Channel" size="20" type="V_String" />
+                <FormulaField expression="If [Recency] = 0 then 'NTB_'+[Channel]&#xA;elseif [Recency] = 1 then 'Existing_'+[Channel]&#xA;ELSE 'React_'+[Channel]&#xA;endif" field="Customer_Type" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Channel = IF [Channels]&gt;1 THEN 
+	'Omni' 
+ELSEIF [Channel]='D' THEN
+	'Direct1' 
+E...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="81">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="1242" y="1038" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="FISCAL_YR" />
+                <Field field="Min_FISCAL_MO" />
+                <Field field="Customer_Type" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="FISCAL_YR" />
+                <Field field="FISCAL_MO" />
+                <Field field="Customer_Type" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_FISCAL_YR" selected="True" rename="Year" />
+                    <SelectField field="Left_Min_FISCAL_MO" selected="True" rename="Fiscal_Mo" />
+                    <SelectField field="Left_Customer_Type" selected="True" rename="Segment_Channel" />
+                    <SelectField field="Left_Customers" selected="True" rename="Year_Number" />
+                    <SelectField field="Right_FISCAL_YR" selected="False" rename="Right_FISCAL_YR" />
+                    <SelectField field="Right_FISCAL_MO" selected="False" rename="Right_FISCAL_MO" />
+                    <SelectField field="Right_Customer_Type" selected="False" rename="Right_Customer_Type" />
+                    <SelectField field="Right_Customers" selected="True" rename="Month_Number" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="82">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1326" y="1038" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[Year_Number]/[Month_Number]" field="percent" size="4" type="Float" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[percent = [Year_Number]/[Month_Number]
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="83">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1518" y="1038" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">C:\Users\jj5jxt\Desktop\september\percentages2.txt</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>|</Delimeter>
+                <ForceQuotes>False</ForceQuotes>
+                <HeaderRow>True</HeaderRow>
+                <CodePage>28591</CodePage>
+                <WriteBOM>True</WriteBOM>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>percentages2.txt</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="87">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1422" y="1038" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="89">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1374" y="510" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [FISCAL_MO] &lt;= 3 THEN 1 &#xA;ELSEIF [FISCAL_MO] &lt;= 6 THEN 2&#xA;Elseif [FISCAL_MO] &lt;= 9 then 3 ELSE 4 ENDIF" field="Quarter" size="2" type="Int16" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Quarter = IF [FISCAL_MO] &lt;= 3 THEN 1 
+ELSEIF [FISCAL_MO] &lt;= 6 THEN 2
+Elseif [FIS...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="90">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="1470" y="462" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="FISCAL_YR" />
+                <Field field="FISCAL_QTR" />
+                <Field field="Customer_Type" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="FISCAL_YR" />
+                <Field field="Quarter" />
+                <Field field="Customer_Type" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_FISCAL_YR" selected="True" />
+                    <SelectField field="Left_FISCAL_QTR" selected="True" />
+                    <SelectField field="Left_Customer_Type" selected="True" />
+                    <SelectField field="Left_Customers" selected="True" rename="cust_quarter" />
+                    <SelectField field="Right_FISCAL_YR" selected="False" rename="Right_FISCAL_YR" />
+                    <SelectField field="Right_FISCAL_MO" selected="True" />
+                    <SelectField field="Right_Customer_Type" selected="False" rename="Right_Customer_Type" />
+                    <SelectField field="Right_Customers" selected="True" rename="cust_month" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="91">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1578" y="462" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">C:\Users\jj5jxt\Desktop\september\quarter_totals2.txt</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>|</Delimeter>
+                <ForceQuotes>False</ForceQuotes>
+                <HeaderRow>True</HeaderRow>
+                <CodePage>28591</CodePage>
+                <WriteBOM>True</WriteBOM>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>quarter_totals2.txt</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="99" Connection="Output" />
+      <Destination ToolID="101" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="100" Connection="Output" />
+      <Destination ToolID="102" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="101" Connection="True" />
+      <Destination ToolID="100" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="True" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="43" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="43" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="True" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="True" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="True" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="True" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Join" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="92" Connection="Output" />
+      <Destination ToolID="97" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="93" Connection="Output" />
+      <Destination ToolID="94" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="94" Connection="Output" />
+      <Destination ToolID="96" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="97" Connection="True" />
+      <Destination ToolID="93" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="True" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="True" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="True" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="True" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="24" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="True" />
+      <Destination ToolID="24" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="True" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="True" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="13" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Join" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Join" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="True" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="True" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="True" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="True" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="True" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="True" />
+      <Destination ToolID="66" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="True" />
+      <Destination ToolID="69" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="True" />
+      <Destination ToolID="78" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="True" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="True" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="62" Connection="Output" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="Output" />
+      <Destination ToolID="64" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="Output" />
+      <Destination ToolID="81" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="81" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="66" Connection="Output" />
+      <Destination ToolID="67" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="67" Connection="Output" />
+      <Destination ToolID="68" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="89" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="Output" />
+      <Destination ToolID="77" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="77" Connection="Output" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="78" Connection="Output" />
+      <Destination ToolID="80" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="Output" />
+      <Destination ToolID="90" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="89" Connection="Output" />
+      <Destination ToolID="90" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="80" Connection="Output" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="81" Connection="Join" />
+      <Destination ToolID="82" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="82" Connection="Output" />
+      <Destination ToolID="87" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="87" Connection="Output" />
+      <Destination ToolID="83" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="90" Connection="Join" />
+      <Destination ToolID="91" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>percentages</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

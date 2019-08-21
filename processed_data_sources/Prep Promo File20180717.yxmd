@@ -1,0 +1,1508 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.1">
+  <Nodes>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="90.00002" y="1086" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\jj5jxt\Desktop\april\renewed_forecasting.xlsx</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>renewed_forecasting.xlsx</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="FISCAL_YR" source="File: C:\Users\jj5jxt\Desktop\april\renewed_forecasting.xlsx" type="Double" />
+            <Field name="FISCAL_MO" source="File: C:\Users\jj5jxt\Desktop\april\renewed_forecasting.xlsx" type="Double" />
+            <Field name="day" source="File: C:\Users\jj5jxt\Desktop\april\renewed_forecasting.xlsx" type="Double" />
+            <Field name="channel" size="255" source="File: C:\Users\jj5jxt\Desktop\april\renewed_forecasting.xlsx" type="V_String" />
+            <Field name="recency" size="255" source="File: C:\Users\jj5jxt\Desktop\april\renewed_forecasting.xlsx" type="V_String" />
+            <Field name="recency_total_investment" source="File: C:\Users\jj5jxt\Desktop\april\renewed_forecasting.xlsx" type="Double" />
+            <Field name="drct_invs_pct" source="File: C:\Users\jj5jxt\Desktop\april\renewed_forecasting.xlsx" type="Double" />
+            <Field name="rtl_invs_pct" source="File: C:\Users\jj5jxt\Desktop\april\renewed_forecasting.xlsx" type="Double" />
+            <Field name="recency_channel_investment" source="File: C:\Users\jj5jxt\Desktop\april\renewed_forecasting.xlsx" type="Double" />
+            <Field name="Customers" source="File: C:\Users\jj5jxt\Desktop\april\renewed_forecasting.xlsx" type="Double" />
+            <Field name="recency_circ" source="File: C:\Users\jj5jxt\Desktop\april\renewed_forecasting.xlsx" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="90.00002" y="1182" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">promos.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>promos.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Segment_Channel" size="254" source="File: C:\Users\jj5jxt\Desktop\july\promos.csv" type="V_String" />
+            <Field name="Segment" size="254" source="File: C:\Users\jj5jxt\Desktop\july\promos.csv" type="V_String" />
+            <Field name="Channel" size="254" source="File: C:\Users\jj5jxt\Desktop\july\promos.csv" type="V_String" />
+            <Field name="FISCAL_YR" size="254" source="File: C:\Users\jj5jxt\Desktop\july\promos.csv" type="V_String" />
+            <Field name="FISCAL_MO" size="254" source="File: C:\Users\jj5jxt\Desktop\july\promos.csv" type="V_String" />
+            <Field name="FISCAL_QTR" size="254" source="File: C:\Users\jj5jxt\Desktop\july\promos.csv" type="V_String" />
+            <Field name="peel_off_days" size="254" source="File: C:\Users\jj5jxt\Desktop\july\promos.csv" type="V_String" />
+            <Field name="post_card_days" size="254" source="File: C:\Users\jj5jxt\Desktop\july\promos.csv" type="V_String" />
+            <Field name="free_ship_days" size="254" source="File: C:\Users\jj5jxt\Desktop\july\promos.csv" type="V_String" />
+            <Field name="flash_sale_days" size="254" source="File: C:\Users\jj5jxt\Desktop\july\promos.csv" type="V_String" />
+            <Field name="global_days" size="254" source="File: C:\Users\jj5jxt\Desktop\july\promos.csv" type="V_String" />
+            <Field name="fp_entire_days" size="254" source="File: C:\Users\jj5jxt\Desktop\july\promos.csv" type="V_String" />
+            <Field name="sp_entire_days" size="254" source="File: C:\Users\jj5jxt\Desktop\july\promos.csv" type="V_String" />
+            <Field name="peel_off_depth" size="254" source="File: C:\Users\jj5jxt\Desktop\july\promos.csv" type="V_String" />
+            <Field name="post_card_depth" size="254" source="File: C:\Users\jj5jxt\Desktop\july\promos.csv" type="V_String" />
+            <Field name="free_ship_depth" size="254" source="File: C:\Users\jj5jxt\Desktop\july\promos.csv" type="V_String" />
+            <Field name="flash_sale_depth" size="254" source="File: C:\Users\jj5jxt\Desktop\july\promos.csv" type="V_String" />
+            <Field name="global_depth" size="254" source="File: C:\Users\jj5jxt\Desktop\july\promos.csv" type="V_String" />
+            <Field name="fp_entire_depth" size="254" source="File: C:\Users\jj5jxt\Desktop\july\promos.csv" type="V_String" />
+            <Field name="sp_entire_depth" size="254" source="File: C:\Users\jj5jxt\Desktop\july\promos.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="282" y="1122" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="FISCAL_MO" />
+            <Field field="FISCAL_YR" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="FISCAL_MO" />
+            <Field field="FISCAL_YR" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_FISCAL_YR" selected="True" rename="Right_FISCAL_YR" />
+                <SelectField field="Right_FISCAL_MO" selected="True" rename="Right_FISCAL_MO" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="186" y="1158" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="FISCAL_YR" selected="True" type="Double" size="8" />
+            <SelectField field="FISCAL_MO" selected="True" type="Double" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="378" y="1122" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\jj5jxt\Desktop\april\prophet_data.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>prophet_data.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="630" width="1151" height="443" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Create Promotion Summary by Day</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79.00003" y="674.0005" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">Promotion Detail by Day.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Promotion Detail by Day.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Event" size="65" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="V_String" />
+                <Field name="Start" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Date" />
+                <Field name="End" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Date" />
+                <Field name="Category" size="11" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="String" />
+                <Field name="Days" source="Formula: DateTimeDiff([End],[Start],'days')+1" type="Double" />
+                <Field name="Secondary Promotion" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Peel Off" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Post Card" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="General Scope" size="11" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="String" />
+                <Field name="Channel Scope" size="6" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="String" />
+                <Field name="FP/OP Scope" size="3" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="String" />
+                <Field name="Collection Scope" size="19" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="V_String" />
+                <Field name="Season Scope" size="6" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="String" />
+                <Field name="Category Scope" size="7" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="String" />
+                <Field name="Customer Scope" size="4" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="String" />
+                <Field name="Style Scope" size="6" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="String" />
+                <Field name="Promo Method" size="12" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="V_String" />
+                <Field name="Max Promo Depth" source="Formula: if isnull([Max Promo Depth])  then 0 else [Max Promo Depth] endif" type="Double" />
+                <Field name="Chinos" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Dresses" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Pants" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Sweaters" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Woven Shirts" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Skirts" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Shorts" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Tees" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Scarves" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Jewelry" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Accessories" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Cardis" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Tops" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Ponte" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Linen" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Denim" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Free Ship Threshold" size="3" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="String" />
+                <Field name="Free Ship Score" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Day_of_Promotion" source="File: C:\Users\jj5jxt\Desktop\july\Promotion Detail by Day.yxdb" type="Int32" />
+                <Field name="Promotion_Date" source="Formula: DateTimeAdd([Start],[Day_of_Promotion]-1,'Days')" type="Date" />
+                <Field name="Promotion Weight" source="Formula: If [General Scope]= 'Entire' then &#xA; 1 &#xA;else&#xA;  [Promotion Weight]*&#xA;  if [Channel Scope]= 'Direct' then &#xA;      0.4 &#xA;  else 0.6&#xA;&#xA;  endif&#xA;endif" type="Double" />
+                <Field name="Direct Promotion Weight" source="Formula: If [Channel Scope]='Retail' then &#xA; 0&#xA;else &#xA; [Promotion Weight]&#xA;endif" type="Double" />
+                <Field name="Retail Promotion Weight" source="Formula: If [Channel Scope]='Direct' then &#xA; 0&#xA;else &#xA; [Promotion Weight]&#xA;endif" type="Double" />
+                <Field name="Promotion Score" source="Formula: [Promotion Weight]*[Max Promo Depth]" type="Double" />
+                <Field name="Retail Promotion Score" source="Formula: [Retail Promotion Weight]*[Max Promo Depth]" type="Double" />
+                <Field name="Direct Promotion Score" source="Formula: [Direct Promotion Weight]*[Max Promo Depth]" type="Double" />
+                <Field name="Global" source="Formula: if [General Scope]=&quot;Entire&quot; then 1 else 0 endif" type="Byte" />
+                <Field name="Flash Sale" source="Formula: if [FP/OP Scope]=&quot;SP&quot; and [Days]=1 then 1 else 0 endif" type="Byte" />
+                <Field name="FP_Entire_Promo" source="Formula: if [FP/OP Scope]=&quot;FP&quot; AND [Collection Scope]=&quot;ALL&quot; AND [Season Scope]=&quot;ALL&quot;&#xA;AND [Customer Scope]=&quot;ALL&quot; AND [Style Scope] =&quot;ALL&quot; AND [Category Scope] = &quot;All Cat&quot;&#xA;then 1&#xA;else 0&#xA;endif" type="Byte" />
+                <Field name="SP_Entire_Promo" source="Formula: if [FP/OP Scope]=&quot;SP&quot; AND [Collection Scope]=&quot;ALL&quot; AND [Season Scope]=&quot;ALL&quot;&#xA;AND [Customer Scope]=&quot;ALL&quot; AND [Style Scope] =&quot;ALL&quot; AND [Category Scope] = &quot;All Cat&quot;&#xA;then 1&#xA;else 0&#xA;endif" type="Byte" />
+                <Field name="Global_depth" source="Formula: [_CurrentField_]*[Max Promo Depth]" type="Double" />
+                <Field name="Flash Sale_depth" source="Formula: [_CurrentField_]*[Max Promo Depth]" type="Double" />
+                <Field name="FP_Entire_Promo_depth" source="Formula: [_CurrentField_]*[Max Promo Depth]" type="Double" />
+                <Field name="SP_Entire_Promo_depth" source="Formula: [_CurrentField_]*[Max Promo Depth]" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="174.9999" y="674" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="0">
+                <Field field="Promotion_Date" order="Ascending" />
+                <Field field="Secondary Promotion" order="Ascending" />
+                <Field field="Event" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Promotion_Date - Ascending
+Secondary Promotion - Ascending
+Event - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="283.0001" y="674.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="if Left([Event], 9)=&quot;Free Ship&quot; then 1 else 0 endif" field="Free Ship" size="1" type="Byte" />
+                <FormulaField expression="if [Days]=1 and [FP/OP Scope]=&quot;SP&quot; then 1 else 0 endif" field="Flash Sale" size="1" type="Byte" />
+                <FormulaField expression="IF [FP/OP Scope] = &quot;FP&quot; and [Collection Scope] = &quot;All&quot; and [Season Scope] = &quot;All&quot; and &#xA;[Category Scope]  = &quot;All Cat&quot; and [Customer Scope] = &quot;ALL&quot; and [Style Scope]= &quot;All&quot; then&#xA;	1 &#xA;ELSE &#xA;	0 &#xA;ENDIF" field="FP_Entire" size="1" type="Byte" />
+                <FormulaField expression="IF [FP/OP Scope] = &quot;SP&quot; and [Collection Scope] = &quot;All&quot; and [Season Scope] = &quot;All&quot; and &#xA;[Category Scope] = &quot;All Cat&quot; and [Customer Scope] = &quot;ALL&quot; and [Style Scope]= &quot;All&quot; then&#xA;	1 &#xA;ELSE &#xA;	0 &#xA;ENDIF" field="SP_Entire" size="1" type="Byte" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Free Ship = if Left([Event], 9)="Free Ship" then 1 else 0 endif
+Flash Sale = if ...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="427" y="686" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Promotion_Date" action="GroupBy" rename="Promotion_Date" />
+                <SummarizeField field="Event" action="Concat" rename="Concat_Event">
+                  <Concat_Start />
+                  <Separator><![CDATA[ - ]]></Separator>
+                  <Concat_End />
+                </SummarizeField>
+                <SummarizeField field="Start" action="Min" rename="Start" />
+                <SummarizeField field="End" action="Max" rename="End" />
+                <SummarizeField field="Days" action="Max" rename="Max_Days" />
+                <SummarizeField field="Event" action="Count" rename="Promo Count" />
+                <SummarizeField field="Peel Off" action="Max" rename="Peel Off" />
+                <SummarizeField field="Post Card" action="Max" rename="Post Card" />
+                <SummarizeField field="Free Ship" action="Max" rename="Free Ship" />
+                <SummarizeField field="Flash Sale" action="Max" rename="Flash Sale" />
+                <SummarizeField field="General Scope" action="Min" rename="General Scope" />
+                <SummarizeField field="Channel Scope" action="Concat" rename="Channel Scope">
+                  <Concat_Start />
+                  <Separator><![CDATA[ - ]]></Separator>
+                  <Concat_End />
+                </SummarizeField>
+                <SummarizeField field="FP/OP Scope" action="Concat" rename="FP/OP Scope">
+                  <Concat_Start />
+                  <Separator><![CDATA[ - ]]></Separator>
+                  <Concat_End />
+                </SummarizeField>
+                <SummarizeField field="Collection Scope" action="Min" rename="Collection Scope" />
+                <SummarizeField field="Season Scope" action="Concat" rename="Season Scope">
+                  <Concat_Start />
+                  <Separator><![CDATA[ - ]]></Separator>
+                  <Concat_End />
+                </SummarizeField>
+                <SummarizeField field="Category Scope" action="Min" rename="Category Scope" />
+                <SummarizeField field="Customer Scope" action="Min" rename="Customer Scope" />
+                <SummarizeField field="Promo Method" action="Concat" rename="Concat_Promo Method">
+                  <Concat_Start />
+                  <Separator><![CDATA[ - ]]></Separator>
+                  <Concat_End />
+                </SummarizeField>
+                <SummarizeField field="Max Promo Depth" action="Max" rename="Max Promo Depth" />
+                <SummarizeField field="Chinos" action="Max" rename="Chinos" />
+                <SummarizeField field="Dresses" action="Max" rename="Dresses" />
+                <SummarizeField field="Pants" action="Max" rename="Pants" />
+                <SummarizeField field="Sweaters" action="Max" rename="Sweaters" />
+                <SummarizeField field="Woven Shirts" action="Max" rename="Woven Shirts" />
+                <SummarizeField field="Skirts" action="Max" rename="Skirts" />
+                <SummarizeField field="Shorts" action="Max" rename="Shorts" />
+                <SummarizeField field="Tees" action="Max" rename="Tees" />
+                <SummarizeField field="Scarves" action="Max" rename="Scarves" />
+                <SummarizeField field="Jewelry" action="Max" rename="Jewelry" />
+                <SummarizeField field="Accessories" action="Max" rename="Accessories" />
+                <SummarizeField field="Cardis" action="Max" rename="Cardis" />
+                <SummarizeField field="Tops" action="Max" rename="Tops" />
+                <SummarizeField field="Ponte" action="Max" rename="Ponte" />
+                <SummarizeField field="Linen" action="Max" rename="Linen" />
+                <SummarizeField field="Day_of_Promotion" action="Min" rename="Min_Day_of_Promotion" />
+                <SummarizeField field="Promotion Score" action="Max" rename="Promotion Daily Score" />
+                <SummarizeField field="Retail Promotion Score" action="Max" rename="Retail Promotion Daily Score" />
+                <SummarizeField field="Direct Promotion Score" action="Max" rename="Direct Promotion Daily Score" />
+                <SummarizeField field="Global" action="Max" rename="Global" />
+                <SummarizeField field="Free Ship Score" action="Min" rename="Free Ship Score" />
+                <SummarizeField field="FP_Entire" action="Max" rename="FP_Entire" />
+                <SummarizeField field="SP_Entire" action="Max" rename="SP_Entire" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="535" y="686" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="0">
+                <Field field="Promotion_Date" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Promotion_Date - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="451" y="854" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">Fiscal Calendar.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Fiscal Calendar.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="FISCAL_YR" source="File: C:\Users\jj6dxw\Documents\Forecasting\Fiscal_Calendar_2012_2019.txt" type="Int16" />
+                <Field name="FISCAL_MO" source="File: C:\Users\jj6dxw\Documents\Forecasting\Fiscal_Calendar_2012_2019.txt" type="Byte" />
+                <Field name="FISCAL_DAY_OF_THE_YR" source="File: C:\Users\jj6dxw\Documents\Forecasting\Fiscal_Calendar_2012_2019.txt" type="Int16" />
+                <Field name="FISCAL_QTR" source="File: C:\Users\jj6dxw\Documents\Forecasting\Fiscal_Calendar_2012_2019.txt" type="Byte" />
+                <Field name="FISCAL_WK" source="File: C:\Users\jj6dxw\Documents\Forecasting\Fiscal_Calendar_2012_2019.txt" type="Byte" />
+                <Field name="DAY_OF_THE_WK" size="9" source="File: C:\Users\jj6dxw\Documents\Forecasting\Fiscal_Calendar_2012_2019.txt" type="String" />
+                <Field name="CALENDAR_DAY" source="File: C:\Users\jj6dxw\Documents\Forecasting\Fiscal_Calendar_2012_2019.txt" type="Byte" />
+                <Field name="CALENDAR_MO" size="3" source="File: C:\Users\jj6dxw\Documents\Forecasting\Fiscal_Calendar_2012_2019.txt" type="String" />
+                <Field name="CALENDAR_QTR" source="File: C:\Users\jj6dxw\Documents\Forecasting\Fiscal_Calendar_2012_2019.txt" type="Byte" />
+                <Field name="CALENDAR_YR" source="File: C:\Users\jj6dxw\Documents\Forecasting\Fiscal_Calendar_2012_2019.txt" type="Int16" />
+                <Field name="CAL_DATE" source="DateTime: To MM/dd/yyyy" type="Date" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="535.0002" y="854" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Field>FISCAL_YR</Field>
+                <Operator>&gt;=</Operator>
+                <Operands>
+                  <Operand>2014</Operand>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[FISCAL_YR] &gt;= 2014</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="643.0001" y="806" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Promotion_Date" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="CAL_DATE" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="751.0007" y="746" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="26">
+          <GuiSettings>
+            <Position x="834.0007" y="738" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="List Box (11)">"Max_Days","Promo Count","Peel Off","Post Card","Free Ship","Flash Sale","Max Promo Depth","Chinos","Dresses","Pants","Sweaters","Woven Shirts","Skirts","Shorts","Tees","Scarves","Jewelry","Accessories","Cardis","Tops","Ponte","Linen"</Value>
+              <Value name="Check Box (84)">False</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">False</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="33">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="810.0004" y="906" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="FISCAL_YR" action="GroupBy" rename="FISCAL_YR" />
+                <SummarizeField field="FISCAL_MO" action="GroupBy" rename="FISCAL_MO" />
+                <SummarizeField field="FISCAL_QTR" action="GroupBy" rename="FISCAL_QTR" />
+                <SummarizeField field="Peel Off" action="Sum" rename="peel_off_days" />
+                <SummarizeField field="Post Card" action="Sum" rename="post_card_days" />
+                <SummarizeField field="Free Ship" action="Sum" rename="free_ship_days" />
+                <SummarizeField field="Flash Sale" action="Sum" rename="flash_sale_days" />
+                <SummarizeField field="Global" action="Sum" rename="global_days" />
+                <SummarizeField field="FP_Entire" action="Sum" rename="fp_entire_days" />
+                <SummarizeField field="SP_Entire" action="Sum" rename="sp_entire_days" />
+                <SummarizeField field="Peel Off_Depth" action="Sum" rename="peel_off_depth" />
+                <SummarizeField field="Post Card_Depth" action="Sum" rename="post_card_depth" />
+                <SummarizeField field="Free Ship_Depth" action="Sum" rename="free_ship_depth" />
+                <SummarizeField field="Flash Sale_Depth" action="Sum" rename="flash_sale_depth" />
+                <SummarizeField field="Global_Depth" action="Sum" rename="global_depth" />
+                <SummarizeField field="FP_Entire_Depth" action="Sum" rename="fp_entire_depth" />
+                <SummarizeField field="SP_Entire_Depth" action="Sum" rename="sp_entire_depth" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="35">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="978.0004" y="942" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File FileFormat="19" MaxRecords="">Promotion Summary by Month.yxdb</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <NoSpatialIndex>False</NoSpatialIndex>
+                <SaveSource>True</SaveSource>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Promotion Summary by Month.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="47">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MultiFieldFormula.MultiFieldFormula">
+            <Position x="786.0003" y="822" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldType>Numeric</FieldType>
+              <Fields orderChanged="False">
+                <Field name="Peel Off" />
+                <Field name="Post Card" />
+                <Field name="Free Ship" />
+                <Field name="Flash Sale" />
+                <Field name="Global" />
+                <Field name="FP_Entire" />
+                <Field name="SP_Entire" />
+                <Field name="Max_Days" selected="False" />
+                <Field name="Promo Count" selected="False" />
+                <Field name="Max Promo Depth" selected="False" />
+                <Field name="Chinos" selected="False" />
+                <Field name="Dresses" selected="False" />
+                <Field name="Pants" selected="False" />
+                <Field name="Sweaters" selected="False" />
+                <Field name="Woven Shirts" selected="False" />
+                <Field name="Skirts" selected="False" />
+                <Field name="Shorts" selected="False" />
+                <Field name="Tees" selected="False" />
+                <Field name="Scarves" selected="False" />
+                <Field name="Jewelry" selected="False" />
+                <Field name="Accessories" selected="False" />
+                <Field name="Cardis" selected="False" />
+                <Field name="Tops" selected="False" />
+                <Field name="Ponte" selected="False" />
+                <Field name="Linen" selected="False" />
+                <Field name="Min_Day_of_Promotion" selected="False" />
+                <Field name="Promotion Daily Score" selected="False" />
+                <Field name="Retail Promotion Daily Score" selected="False" />
+                <Field name="Direct Promotion Daily Score" selected="False" />
+                <Field name="Free Ship Score" selected="False" />
+                <Field name="FISCAL_YR" selected="False" />
+                <Field name="FISCAL_MO" selected="False" />
+                <Field name="FISCAL_DAY_OF_THE_YR" selected="False" />
+                <Field name="FISCAL_QTR" selected="False" />
+                <Field name="FISCAL_WK" selected="False" />
+                <Field name="CALENDAR_DAY" selected="False" />
+                <Field name="CALENDAR_QTR" selected="False" />
+                <Field name="CALENDAR_YR" selected="False" />
+                <Field name="*Unknown" selected="False" />
+              </Fields>
+              <NewFieldAddOn>_Depth</NewFieldAddOn>
+              <NewFieldAddOnPos>Suffix</NewFieldAddOnPos>
+              <CopyOutput value="True" />
+              <Expression>[_CurrentField_]*[Max Promo Depth]</Expression>
+              <ChangeFieldType value="True" />
+              <OutputFieldType type="Double" size="8" scale="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[_CurrentField_]*[Max Promo Depth]</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiFieldFormula" />
+        </Node>
+        <Node ToolID="48">
+          <GuiSettings>
+            <Position x="906.0004" y="942" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="List Box (11)">"FISCAL_YR","FISCAL_MO","FISCAL_QTR"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="49">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1110" y="774" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">promos.csv</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>,</Delimeter>
+                <ForceQuotes>False</ForceQuotes>
+                <HeaderRow>True</HeaderRow>
+                <CodePage>28591</CodePage>
+                <WriteBOM>True</WriteBOM>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>promos.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="55">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="918" y="846" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="9" />
+              <Fields>
+                <Field name="Segment_Channel" />
+                <Field name="Segment" />
+                <Field name="Channel" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>NTB_Omni</c>
+                  <c>NTB</c>
+                  <c>Omni</c>
+                </r>
+                <r>
+                  <c>NTB_Retail1</c>
+                  <c>NTB</c>
+                  <c>Retail1</c>
+                </r>
+                <r>
+                  <c>NTB_Direct1</c>
+                  <c>NTB</c>
+                  <c>Direct1</c>
+                </r>
+                <r>
+                  <c>Existing_Omni</c>
+                  <c>Existing</c>
+                  <c>Omni</c>
+                </r>
+                <r>
+                  <c>Existing_Retail1</c>
+                  <c>Existing</c>
+                  <c>Retail1</c>
+                </r>
+                <r>
+                  <c>Existing_Direct1</c>
+                  <c>Existing</c>
+                  <c>Direct1</c>
+                </r>
+                <r>
+                  <c>React_Omni</c>
+                  <c>React</c>
+                  <c>Omni</c>
+                </r>
+                <r>
+                  <c>React_Retail1</c>
+                  <c>React</c>
+                  <c>Retail1</c>
+                </r>
+                <r>
+                  <c>React_Direct1</c>
+                  <c>React</c>
+                  <c>Direct1</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="56">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="1014" y="774" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Allow</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="54" width="686" height="224" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Convert Original to YXDB</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="78.99999" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Promos DW w calendar updates 05.15.19.xlsx
+Table=`Alteryx$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Event" size="255" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="V_String" />
+                <Field name="Start" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Date" />
+                <Field name="End" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Date" />
+                <Field name="Category" size="255" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="V_String" />
+                <Field name="Days" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Secondary Promotion" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Peel Off" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Post Card" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="General Scope" size="255" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="V_String" />
+                <Field name="Channel Scope" size="255" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="V_String" />
+                <Field name="FP/OP Scope" size="255" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="V_String" />
+                <Field name="Collection Scope" size="255" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="V_String" />
+                <Field name="Season Scope" size="255" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="V_String" />
+                <Field name="Category Scope" size="255" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="V_String" />
+                <Field name="Customer Scope" size="255" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="V_String" />
+                <Field name="Style Scope" size="255" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="V_String" />
+                <Field name="Promo Method" size="255" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="V_String" />
+                <Field name="Max Promo Depth" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Chinos" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Dresses" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Pants" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Sweaters" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Woven Shirts" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Skirts" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Shorts" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Tees" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Scarves" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Jewelry" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Accessories" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Cardis" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Tops" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Ponte" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Linen" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Denim" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Free Ship Threshold" size="255" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="V_String" />
+                <Field name="Free Ship Score" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="259" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="if isnull([Max Promo Depth])  then 0 else [Max Promo Depth] endif" field="Max Promo Depth" size="8" type="Double" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Max Promo Depth = if isnull([Max Promo Depth])  then 0 else [Max Promo Depth] en...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="369" y="98.00002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields>
+                <Field field="Event" selected="True" />
+                <Field field="Category" selected="True" />
+                <Field field="General Scope" selected="True" />
+                <Field field="Channel Scope" selected="True" />
+                <Field field="FP/OP Scope" selected="True" />
+                <Field field="Collection Scope" selected="True" />
+                <Field field="Season Scope" selected="True" />
+                <Field field="Category Scope" selected="True" />
+                <Field field="Customer Scope" selected="True" />
+                <Field field="Style Scope" selected="True" />
+                <Field field="Promo Method" selected="True" />
+                <Field field="Free Ship Threshold" selected="True" />
+                <Field field="*Unknown" selected="True" />
+              </Fields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Event" size="65" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="V_String" />
+                <Field name="Start" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Date" />
+                <Field name="End" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Date" />
+                <Field name="Category" size="11" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="String" />
+                <Field name="Days" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Secondary Promotion" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Peel Off" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Post Card" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="General Scope" size="11" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="String" />
+                <Field name="Channel Scope" size="6" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="String" />
+                <Field name="FP/OP Scope" size="3" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="String" />
+                <Field name="Collection Scope" size="19" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="V_String" />
+                <Field name="Season Scope" size="6" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="String" />
+                <Field name="Category Scope" size="7" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="String" />
+                <Field name="Customer Scope" size="4" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="String" />
+                <Field name="Style Scope" size="6" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="String" />
+                <Field name="Promo Method" size="12" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="V_String" />
+                <Field name="Max Promo Depth" source="Formula: if isnull([Max Promo Depth])  then 0 else [Max Promo Depth] endif" type="Double" />
+                <Field name="Chinos" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Dresses" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Pants" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Sweaters" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Woven Shirts" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Skirts" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Shorts" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Tees" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Scarves" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Jewelry" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Accessories" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Cardis" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Tops" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Ponte" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Linen" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Denim" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Free Ship Threshold" size="3" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="String" />
+                <Field name="Free Ship Score" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="477.0008" y="98" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="621.0005" y="98.00005" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File FileFormat="19" MaxRecords="">PromoList.yxdb</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <NoSpatialIndex>False</NoSpatialIndex>
+                <SaveSource>True</SaveSource>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>PromoList.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="30">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="174" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54.00001" y="282" width="264.4621" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Create Promotion Detail by Day YXDB</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79.00008" y="326" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">PromoList.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>PromoList.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Event" size="65" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="V_String" />
+                <Field name="Start" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Date" />
+                <Field name="End" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Date" />
+                <Field name="Category" size="11" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="String" />
+                <Field name="Days" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Secondary Promotion" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Peel Off" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Post Card" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="General Scope" size="11" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="String" />
+                <Field name="Channel Scope" size="6" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="String" />
+                <Field name="FP/OP Scope" size="3" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="String" />
+                <Field name="Collection Scope" size="19" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="V_String" />
+                <Field name="Season Scope" size="6" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="String" />
+                <Field name="Category Scope" size="7" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="String" />
+                <Field name="Customer Scope" size="4" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="String" />
+                <Field name="Style Scope" size="6" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="String" />
+                <Field name="Promo Method" size="12" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="V_String" />
+                <Field name="Max Promo Depth" source="Formula: if isnull([Max Promo Depth])  then 0 else [Max Promo Depth] endif" type="Double" />
+                <Field name="Chinos" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Dresses" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Pants" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Sweaters" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Woven Shirts" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Skirts" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Shorts" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Tees" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Scarves" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Jewelry" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Accessories" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Cardis" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Tops" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Ponte" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Linen" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Denim" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+                <Field name="Free Ship Threshold" size="3" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="String" />
+                <Field name="Free Ship Score" source="File: C:\Users\jj5jxt\Desktop\july\Promos DW w calendar updates 05.15.19.xlsx|||`Alteryx$`" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="942" y="330" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File FileFormat="19" MaxRecords="">Promotion Detail by Day.yxdb</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <NoSpatialIndex>False</NoSpatialIndex>
+                <SaveSource>True</SaveSource>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Promotion Detail by Day.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="486" y="330" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="&#xA;if [FP/OP Scope] = &quot;All&quot; then &#xA;	1 &#xA;else&#xA;	0.5&#xA;endif&#xA;" field="Promotion Weight" size="8" type="Double" />
+                <FormulaField expression="[Promotion Weight] *&#xA;if [Collection Scope] = &quot;All&quot; then &#xA;	1&#xA;else&#xA;	0.25&#xA;endif" field="Promotion Weight" size="8" type="Double" />
+                <FormulaField expression="[Promotion Weight] *&#xA;if [Category Scope] = &quot;All Cat&quot; then &#xA;	1&#xA;else&#xA;	CharToInt(left([Category Scope],1))* 0.1&#xA;endif&#xA;" field="Promotion Weight" size="8" type="Double" />
+                <FormulaField expression="[Promotion Weight] *&#xA;if [Customer Scope] = &quot;ALL&quot; then &#xA;	1&#xA;else&#xA;	0.1&#xA;endif" field="Promotion Weight" size="8" type="Double" />
+                <FormulaField expression="[Promotion Weight] *&#xA;if [Style Scope] = &quot;ALL&quot; then &#xA;	1&#xA;else&#xA;	0.05&#xA;endif" field="Promotion Weight" size="8" type="Double" />
+                <FormulaField expression="If [Channel Scope]='Retail' then &#xA;	0&#xA;else &#xA;	[Promotion Weight]&#xA;endif" field="Direct Promotion Weight" size="8" type="Double" />
+                <FormulaField expression="If [Channel Scope]='Direct' then &#xA;	0&#xA;else &#xA;	[Promotion Weight]&#xA;endif" field="Retail Promotion Weight" size="8" type="Double" />
+                <FormulaField expression="If [General Scope]= 'Entire' then &#xA;	1 &#xA;else&#xA;  [Promotion Weight]*&#xA;  if [Channel Scope]= 'Direct' then &#xA;      0.4 &#xA;  else 0.6&#xA;&#xA;  endif&#xA;endif" field="Promotion Weight" size="8" type="Double" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>No longer used</AnnotationText>
+              <DefaultAnnotationText>Promotion Weight = 
+if [FP/OP Scope] = "All" then 
+	1 
+else
+	0.5
+endif
+
+Promotio...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="31">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="606.0001" y="326" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[Promotion Weight]*[Max Promo Depth]" field="Promotion Score" size="8" type="Double" />
+                <FormulaField expression="[Retail Promotion Weight]*[Max Promo Depth]" field="Retail Promotion Score" size="8" type="Double" />
+                <FormulaField expression="[Direct Promotion Weight]*[Max Promo Depth]" field="Direct Promotion Score" size="8" type="Double" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>No longer used</AnnotationText>
+              <DefaultAnnotationText>Promotion Score = [Promotion Weight]*[Max Promo Depth]
+Retail Promotion Score = ...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="32">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="750.0005" y="330" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="if [General Scope]=&quot;Entire&quot; then 1 else 0 endif" field="Global" size="1" type="Byte" />
+                <FormulaField expression="if [FP/OP Scope]=&quot;SP&quot; and [Days]=1 then 1 else 0 endif" field="Flash Sale" size="1" type="Byte" />
+                <FormulaField expression="if [FP/OP Scope]=&quot;FP&quot; AND [Collection Scope]=&quot;ALL&quot; AND [Season Scope]=&quot;ALL&quot;&#xA;AND [Customer Scope]=&quot;ALL&quot; AND [Style Scope] =&quot;ALL&quot; AND [Category Scope] = &quot;All Cat&quot;&#xA;then	1&#xA;else 0&#xA;endif" field="FP_Entire_Promo" size="1" type="Byte" />
+                <FormulaField expression="if [FP/OP Scope]=&quot;SP&quot; AND [Collection Scope]=&quot;ALL&quot; AND [Season Scope]=&quot;ALL&quot;&#xA;AND [Customer Scope]=&quot;ALL&quot; AND [Style Scope] =&quot;ALL&quot; AND [Category Scope] = &quot;All Cat&quot;&#xA;then	1&#xA;else 0&#xA;endif" field="SP_Entire_Promo" size="1" type="Byte" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Global = if [General Scope]="Entire" then 1 else 0 endif
+Flash Sale = if [FP/OP ...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="211" y="326" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeDiff([End],[Start],'days')+1" field="Days" size="8" type="Double" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Days = DateTimeDiff([End],[Start],'days')+1
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="44">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
+            <Position x="283" y="326.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UpdateField value="False" />
+              <UpdateField_Name />
+              <CreateField_Name>Day_of_Promotion</CreateField_Name>
+              <CreateField_Type>Int32</CreateField_Type>
+              <CreateField_Size>4</CreateField_Size>
+              <Expression_Init>1</Expression_Init>
+              <Expression_Cond>Day_of_Promotion&lt;=[Days]</Expression_Cond>
+              <Expression_Loop>Day_of_Promotion + 1</Expression_Loop>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
+        </Node>
+        <Node ToolID="45">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="355" y="326" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeAdd([Start],[Day_of_Promotion]-1,'Days')" field="Promotion_Date" size="10" type="Date" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Promotion_Date = DateTimeAdd([Start],[Day_of_Promotion]-1,'Days')
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="46">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MultiFieldFormula.MultiFieldFormula">
+            <Position x="846" y="330" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldType>Numeric</FieldType>
+              <Fields orderChanged="False">
+                <Field name="Global" />
+                <Field name="Flash Sale" />
+                <Field name="FP_Entire_Promo" />
+                <Field name="SP_Entire_Promo" />
+                <Field name="Days" selected="False" />
+                <Field name="Secondary Promotion" selected="False" />
+                <Field name="Peel Off" selected="False" />
+                <Field name="Post Card" selected="False" />
+                <Field name="Max Promo Depth" selected="False" />
+                <Field name="Chinos" selected="False" />
+                <Field name="Dresses" selected="False" />
+                <Field name="Pants" selected="False" />
+                <Field name="Sweaters" selected="False" />
+                <Field name="Woven Shirts" selected="False" />
+                <Field name="Skirts" selected="False" />
+                <Field name="Shorts" selected="False" />
+                <Field name="Tees" selected="False" />
+                <Field name="Scarves" selected="False" />
+                <Field name="Jewelry" selected="False" />
+                <Field name="Accessories" selected="False" />
+                <Field name="Cardis" selected="False" />
+                <Field name="Tops" selected="False" />
+                <Field name="Ponte" selected="False" />
+                <Field name="Linen" selected="False" />
+                <Field name="Denim" selected="False" />
+                <Field name="Free Ship Score" selected="False" />
+                <Field name="Day_of_Promotion" selected="False" />
+                <Field name="Promotion Weight" selected="False" />
+                <Field name="Direct Promotion Weight" selected="False" />
+                <Field name="Retail Promotion Weight" selected="False" />
+                <Field name="Promotion Score" selected="False" />
+                <Field name="Retail Promotion Score" selected="False" />
+                <Field name="Direct Promotion Score" selected="False" />
+                <Field name="*Unknown" selected="False" />
+              </Fields>
+              <NewFieldAddOn>_depth</NewFieldAddOn>
+              <NewFieldAddOnPos>Suffix</NewFieldAddOnPos>
+              <CopyOutput value="True" />
+              <Expression>[_CurrentField_]*[Max Promo Depth]</Expression>
+              <ChangeFieldType value="True" />
+              <OutputFieldType type="Double" size="8" scale="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[_CurrentField_]*[Max Promo Depth]</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiFieldFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="52" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="52" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Join" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="24" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="True" />
+      <Destination ToolID="24" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="24" Connection="Join" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="24" Connection="Right" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="26" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output26" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="48" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output26" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output26" />
+      <Destination ToolID="56" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="56" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Prep Promo File20180717</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

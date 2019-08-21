@@ -1,0 +1,758 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">\\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>circ_calendar20180718.xlsx
+Table=`Catalog History$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Year" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`" type="Double" />
+            <Field name="Week #" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`" type="Double" />
+            <Field name="Fiscal Month" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`" type="Double" />
+            <Field name="Quarter" size="255" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`" type="V_String" />
+            <Field name="Week Ending" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`" type="Date" />
+            <Field name="Catalog" size="255" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`" type="V_String" />
+            <Field name="Print offer code" size="255" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`" type="V_String" />
+            <Field name="Web offer code" size="255" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`" type="V_String" />
+            <Field name="ICH" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`" type="Date" />
+            <Field name="FP&#xA;Pgs" size="255" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`" type="V_String" />
+            <Field name="Sale&#xA;Pgs" size="255" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`" type="V_String" />
+            <Field name="OFM" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`" type="Double" />
+            <Field name="Tot Pgs" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`" type="Double" />
+            <Field name="SI" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`" type="Double" />
+            <Field name="Existing" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`" type="Double" />
+            <Field name="Reacts" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`" type="Double" />
+            <Field name="Prospects" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`" type="Double" />
+            <Field name="Total Circ" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`" type="Double" />
+            <Field name="Drop" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`" type="Double" />
+            <Field name="Drop2" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`" type="Double" />
+            <Field name="F21" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`" type="Double" />
+            <Field name="F22" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`" type="Double" />
+            <Field name="Existing2" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`" type="Double" />
+            <Field name="React" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`" type="Double" />
+            <Field name="Props" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`" type="Double" />
+            <Field name="F26" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`" type="Double" />
+            <Field name="F27" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`" type="Double" />
+            <Field name="F28" size="255" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`" type="V_String" />
+            <Field name="F29" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`" type="Double" />
+            <Field name="F30" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`" type="Double" />
+            <Field name="F31" size="255" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`" type="V_String" />
+            <Field name="F32" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`" type="Double" />
+            <Field name="F33" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`" type="Bool" />
+            <Field name="F34" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`" type="Double" />
+            <Field name="F35" size="255" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Catalog History$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="162" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="ICH" action="GroupBy" rename="ICH" />
+            <SummarizeField field="Drop" action="GroupBy" rename="Drop" />
+            <SummarizeField field="Existing" action="Sum" rename="Existing Circ" />
+            <SummarizeField field="Reacts" action="Sum" rename="Reacts Circ" />
+            <SummarizeField field="Prospects" action="Sum" rename="NTB Circ" />
+            <SummarizeField field="Total Circ" action="Sum" rename="Total Circ" />
+            <SummarizeField field="Fiscal Month" action="GroupBy" rename="Fiscal Month" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="426" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">\\Mac\Home\Desktop\janes_functions\customer forecast inputs\prophet\historical data\Fiscal Calendar.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Fiscal Calendar.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="FISCAL_YR" source="File: C:\Users\jj6dxw\Documents\Forecasting\Fiscal_Calendar_2012_2019.txt" type="Int16" />
+            <Field name="FISCAL_MO" source="File: C:\Users\jj6dxw\Documents\Forecasting\Fiscal_Calendar_2012_2019.txt" type="Byte" />
+            <Field name="FISCAL_DAY_OF_THE_YR" source="File: C:\Users\jj6dxw\Documents\Forecasting\Fiscal_Calendar_2012_2019.txt" type="Int16" />
+            <Field name="FISCAL_QTR" source="File: C:\Users\jj6dxw\Documents\Forecasting\Fiscal_Calendar_2012_2019.txt" type="Byte" />
+            <Field name="FISCAL_WK" source="File: C:\Users\jj6dxw\Documents\Forecasting\Fiscal_Calendar_2012_2019.txt" type="Byte" />
+            <Field name="DAY_OF_THE_WK" size="9" source="File: C:\Users\jj6dxw\Documents\Forecasting\Fiscal_Calendar_2012_2019.txt" type="String" />
+            <Field name="CALENDAR_DAY" source="File: C:\Users\jj6dxw\Documents\Forecasting\Fiscal_Calendar_2012_2019.txt" type="Byte" />
+            <Field name="CALENDAR_MO" size="3" source="File: C:\Users\jj6dxw\Documents\Forecasting\Fiscal_Calendar_2012_2019.txt" type="String" />
+            <Field name="CALENDAR_QTR" source="File: C:\Users\jj6dxw\Documents\Forecasting\Fiscal_Calendar_2012_2019.txt" type="Byte" />
+            <Field name="CALENDAR_YR" source="File: C:\Users\jj6dxw\Documents\Forecasting\Fiscal_Calendar_2012_2019.txt" type="Int16" />
+            <Field name="CAL_DATE" source="DateTime: To MM/dd/yyyy" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
+        <Position x="246" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name />
+          <CreateField_Name>Circ Day</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <Expression_Init>0</Expression_Init>
+          <Expression_Cond>[Circ Day]&lt;=41</Expression_Cond>
+          <Expression_Loop>[Circ Day]+1</Expression_Loop>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="342" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="FLOOR([Circ Day]/7)" field="Circ Week" size="2" type="Int16" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Circ Week = FLOOR([Circ Day]/7)
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="426" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeAdd([ICH],[Circ Day],'days')" field="CAL_DATE" size="10" type="Date" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[CAL_DATE = DateTimeAdd([ICH],[Circ Day],'days')
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="558" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="CAL_DATE" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="CAL_DATE" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_CAL_DATE" selected="False" rename="Right_CAL_DATE" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="690" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Circ Week" />
+            <Field field="Fiscal Month" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Drop Week" />
+            <Field field="Month" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Month" selected="False" />
+                <SelectField field="Right_Drop Week" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="558" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">\\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Drop Response$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>circ_calendar20180718.xlsx
+Table=`Drop Response$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Month" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Drop Response$`" type="Double" />
+            <Field name="Drop Week" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Drop Response$`" type="Double" />
+            <Field name="Drop Response" source="File: \\Mac\Home\Desktop\july\circ_calendar20180718.xlsx|||`Drop Response$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="786" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Drop Response]/7" field="Drop Response" size="8" type="Double" />
+            <FormulaField expression="IF [Drop] = 1 THEN &#xA;	[Drop Response] &#xA;ELSE &#xA;	0 &#xA;ENDIF" field="D1_Drop_Response" size="8" type="Double" />
+            <FormulaField expression="IF [Drop] = 2 THEN &#xA;	[Drop Response] &#xA;ELSE &#xA;	0 &#xA;ENDIF" field="D2_Drop_Response" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Drop Response = [Drop Response]/7
+D1_Drop_Response = IF [Drop] = 1 THEN 
+	[Drop ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiFieldFormula.MultiFieldFormula">
+        <Position x="882" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldType>Numeric</FieldType>
+          <Fields orderChanged="False">
+            <Field name="Existing Circ" />
+            <Field name="Reacts Circ" />
+            <Field name="NTB Circ" />
+            <Field name="Total Circ" />
+            <Field name="FISCAL_YR" selected="False" />
+            <Field name="FISCAL_MO" selected="False" />
+            <Field name="FISCAL_DAY_OF_THE_YR" selected="False" />
+            <Field name="FISCAL_QTR" selected="False" />
+            <Field name="FISCAL_WK" selected="False" />
+            <Field name="CALENDAR_DAY" selected="False" />
+            <Field name="CALENDAR_QTR" selected="False" />
+            <Field name="CALENDAR_YR" selected="False" />
+            <Field name="Drop" selected="False" />
+            <Field name="Fiscal Month" selected="False" />
+            <Field name="Circ Day" selected="False" />
+            <Field name="Circ Week" selected="False" />
+            <Field name="Drop Response" selected="False" />
+            <Field name="D1_Drop_Response" selected="False" />
+            <Field name="D2_Drop_Response" selected="False" />
+            <Field name="*Unknown" selected="False" />
+          </Fields>
+          <NewFieldAddOn>_D1Score</NewFieldAddOn>
+          <NewFieldAddOnPos>Suffix</NewFieldAddOnPos>
+          <CopyOutput value="True" />
+          <Expression>[_CurrentField_]*[D1_Drop_Response]</Expression>
+          <ChangeFieldType value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[_CurrentField_]*[D1_Drop_Response]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiFieldFormula" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1074" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="FISCAL_YR" action="GroupBy" rename="FISCAL_YR" />
+            <SummarizeField field="FISCAL_QTR" action="GroupBy" rename="FISCAL_QTR" />
+            <SummarizeField field="FISCAL_MO" action="GroupBy" rename="FISCAL_MO" />
+            <SummarizeField field="Existing Circ_D1Score" action="Sum" rename="E" />
+            <SummarizeField field="Reacts Circ_D1Score" action="Sum" rename="R" />
+            <SummarizeField field="NTB Circ_D1Score" action="Sum" rename="N" />
+            <SummarizeField field="Existing Circ_D2Score" action="Sum" rename="E2" />
+            <SummarizeField field="Reacts Circ_D2Score" action="Sum" rename="R2" />
+            <SummarizeField field="NTB Circ_D2Score" action="Sum" rename="N2" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1458" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">processed_circ.txt</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>processed_circ.txt</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiFieldFormula.MultiFieldFormula">
+        <Position x="978" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldType>Numeric</FieldType>
+          <Fields orderChanged="False">
+            <Field name="Existing Circ" />
+            <Field name="Reacts Circ" />
+            <Field name="NTB Circ" />
+            <Field name="Total Circ" />
+            <Field name="FISCAL_YR" selected="False" />
+            <Field name="FISCAL_MO" selected="False" />
+            <Field name="FISCAL_DAY_OF_THE_YR" selected="False" />
+            <Field name="FISCAL_QTR" selected="False" />
+            <Field name="FISCAL_WK" selected="False" />
+            <Field name="CALENDAR_DAY" selected="False" />
+            <Field name="CALENDAR_QTR" selected="False" />
+            <Field name="CALENDAR_YR" selected="False" />
+            <Field name="Drop" selected="False" />
+            <Field name="Fiscal Month" selected="False" />
+            <Field name="Circ Day" selected="False" />
+            <Field name="Circ Week" selected="False" />
+            <Field name="Drop Response" selected="False" />
+            <Field name="D1_Drop_Response" selected="False" />
+            <Field name="D2_Drop_Response" selected="False" />
+            <Field name="Existing Circ_D1Score" selected="False" />
+            <Field name="Reacts Circ_D1Score" selected="False" />
+            <Field name="NTB Circ_D1Score" selected="False" />
+            <Field name="Total Circ_D1Score" selected="False" />
+            <Field name="*Unknown" selected="False" />
+          </Fields>
+          <NewFieldAddOn>_D2Score</NewFieldAddOn>
+          <NewFieldAddOnPos>Suffix</NewFieldAddOnPos>
+          <CopyOutput value="True" />
+          <Expression>[_CurrentField_]*[D2_Drop_Response]</Expression>
+          <ChangeFieldType value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[_CurrentField_]*[D2_Drop_Response]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiFieldFormula" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="846" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="CAL_DATE" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="CAL_DATE" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_FISCAL_YR" selected="True" />
+                <SelectField field="Left_FISCAL_MO" selected="True" />
+                <SelectField field="Right_Existing Circ" selected="True" />
+                <SelectField field="Right_Reacts Circ" selected="True" />
+                <SelectField field="Right_NTB Circ" selected="True" />
+                <SelectField field="Right_Total Circ" selected="True" />
+                <SelectField field="Right_CAL_DATE" selected="False" rename="Right_CAL_DATE" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1038" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="FISCAL_YR" action="GroupBy" rename="FISCAL_YR" />
+            <SummarizeField field="FISCAL_MO" action="GroupBy" rename="FISCAL_MO" />
+            <SummarizeField field="Existing Circ" action="Sum" rename="Sum_Existing Circ" />
+            <SummarizeField field="Reacts Circ" action="Sum" rename="Sum_Reacts Circ" />
+            <SummarizeField field="NTB Circ" action="Sum" rename="Sum_NTB Circ" />
+            <SummarizeField field="Total Circ" action="Sum" rename="Sum_Total Circ" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="654" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Existing Circ" selected="True" />
+            <SelectField field="Reacts Circ" selected="True" />
+            <SelectField field="NTB Circ" selected="True" />
+            <SelectField field="Total Circ" selected="True" />
+            <SelectField field="CAL_DATE" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="942" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="FISCAL_YR" />
+            <Field field="FISCAL_MO" />
+            <Field field="Existing Circ" />
+            <Field field="Reacts Circ" />
+            <Field field="NTB Circ" />
+            <Field field="Total Circ" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Unique: FISCAL_YR, FISCAL_MO, Existing Circ, Reacts Circ, NTB Circ, Total Circ</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="1266" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="FISCAL_YR" />
+            <Field field="FISCAL_QTR" />
+            <Field field="FISCAL_MO" />
+          </KeyFields>
+          <DataFields>
+            <Field field="FISCAL_YR" selected="False" />
+            <Field field="FISCAL_QTR" selected="False" />
+            <Field field="FISCAL_MO" selected="False" />
+            <Field field="E" selected="False" />
+            <Field field="R" selected="False" />
+            <Field field="N" selected="False" />
+            <Field field="E2" selected="False" />
+            <Field field="R2" selected="False" />
+            <Field field="N2" selected="False" />
+            <Field field="Existing" selected="True" />
+            <Field field="NTB" selected="True" />
+            <Field field="React" selected="True" />
+            <Field field="*Unknown" selected="False" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1170" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[E] + [E2]" field="Existing" size="4" type="Float" />
+            <FormulaField expression="[N] + [N2]" field="NTB" size="4" type="Float" />
+            <FormulaField expression="[R]+[R2]" field="React" size="4" type="Float" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Existing = [E] + [E2]
+NTB = [N] + [N2]
+React = [R]+[R2]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1362" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Name" selected="True" rename="Segment" />
+            <SelectField field="Value" selected="True" rename="circ_score" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="8" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="17" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="17" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Join" />
+      <Destination ToolID="9" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="9" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Join" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Join" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Unique" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Prep Catalog History20180613</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

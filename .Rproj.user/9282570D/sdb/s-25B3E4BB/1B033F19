@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1566336324350.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "1B033F19",
+    "lastKnownWriteTime" : -1152921504336377344,
+    "last_content_update" : 1566336324350,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "522F0767",
+        "caption" : "promos",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=promos&cache_key=522F0767",
+        "displayedObservations" : 648,
+        "environment" : "",
+        "object" : "promos",
+        "preview" : 0,
+        "totalObservations" : 648,
+        "variables" : 20
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

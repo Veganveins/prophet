@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1566336387588.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "D6662C1",
+    "lastKnownWriteTime" : 8589934591,
+    "last_content_update" : 1566336387588,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "299787D",
+        "caption" : "holidays",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=holidays&cache_key=299787D",
+        "displayedObservations" : 55,
+        "environment" : "",
+        "object" : "holidays",
+        "preview" : 0,
+        "totalObservations" : 55,
+        "variables" : 4
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
